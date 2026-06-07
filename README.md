@@ -26,7 +26,7 @@ These models predict observed pitch choice. They do not prove that a pitch was o
 ├── 04_paper_outputs.ipynb
 ├── 05_pitch_sequence_pipeline.ipynb
 ├── ...
-├── 16_make_final_paper_visuals.ipynb
+├── 14_final_paper_visuals.ipynb
 ├── code/
 ├── data/
 ├── output/
@@ -35,7 +35,7 @@ These models predict observed pitch choice. They do not prove that a pitch was o
 ```
 
 - `00_` through `04_`: main numbered notebooks for the final paper workflow.
-- `05_` through `16_`: sequential audit notebooks converted from the Python scripts in `code/`.
+- `05_` through `14_`: sequential audit notebooks converted from the Python scripts in `code/`.
 - `code/`: reusable Python pipeline scripts.
 - `data/`: raw and processed Statcast data. If large data files are omitted from a clone, they can be regenerated from public Statcast data by running the notebooks in order.
 - `output/`: top-100 model metrics, transition tables, OLS beta tables, prediction audits, SHAP outputs, stacked-model results, and paper figures.
@@ -47,7 +47,7 @@ These models predict observed pitch choice. They do not prove that a pitch was o
 2. Start with `00_pull.ipynb`.
 3. Run `00_pull.ipynb`, `01_merge.ipynb`, `02_state_machine_ols.ipynb`, `03_temporal_model_sweep.ipynb`, and `04_paper_outputs.ipynb` in order.
 4. Keep `TOP_N = 100` for the final project run. Use a smaller value only for debugging.
-5. Run `10_tune_boosted_and_shap.ipynb`, `11_compare_recency_boosters.ipynb`, `12_stacked_exact_model.ipynb`, and `16_make_final_paper_visuals.ipynb` for the final boosted, stacked, SHAP, and visualization extensions.
+5. Run `10_tune_boosted_and_shap.ipynb`, `11_compare_recency_boosters.ipynb`, `12_stacked_exact_model.ipynb`, and `14_final_paper_visuals.ipynb` for the final boosted, stacked, SHAP, and visualization extensions.
 
 Local equivalent:
 
@@ -57,11 +57,11 @@ python3 code/pitch_sequence_pipeline.py --top-n 100
 python3 code/pitch_sequence_extension.py --top-n 100
 python3 code/state_machine_and_ols.py --top-n 100
 python3 code/pitch_choice_diagnostics.py --top-n 100
-python3 code/paper_ready_analysis.py --top-n 100
+python3 code/paper_analysis.py --top-n 100
 python3 code/tune_boosted_and_shap.py --top-n 100
 python3 code/compare_recency_boosters.py --top-n 100 --skip-catboost
 python3 code/stacked_exact_model.py --top-n 100
-python3 code/make_final_paper_visuals.py
+python3 code/final_paper_visuals.py
 ```
 
 `compare_recency_boosters.py` can run CatBoost if CatBoost is installed. The final submitted comparison focuses on HGB, XGBoost, and the stacked model.
@@ -79,14 +79,12 @@ python3 code/make_final_paper_visuals.py
 | `06_pitch_sequence_extension.ipynb` | Processed features and model outputs | Source notebook for extended validation figures and supporting pitch-sequence outputs | `outputs/figures/`; additional model comparison CSVs |
 | `07_state_machine_and_ols.ipynb` | Processed 2025 and 2026 feature tables | Source notebook for state-machine, OLS, arsenal masking, and model comparison code | `output/state_ols_*`; `output/ols_*`; `output/state_machine_*` |
 | `08_pitch_choice_diagnostics.ipynb` | Processed features; model predictions | Source notebook for next-pitch sweep, context uncertainty, calibration, and count-level diagnostics | `output/pitch_choice_context_entropy.csv`; `output/prediction_confidence_calibration.csv`; `output/figures/` |
-| `09_paper_ready_analysis.ipynb` | Model comparison tables; SHAP-ready models | Source notebook for paper-ready model comparisons, beta heatmaps, and SHAP panels | `output/paper_ready/` |
+| `09_paper_analysis.ipynb` | Model comparison tables; SHAP-ready models | Source notebook for paper-ready model comparisons, beta heatmaps, and SHAP panels | `output/paper_ready/` |
 | `10_tune_boosted_and_shap.ipynb` | Processed features; prior paper-ready outputs | Tunes HGB hyperparameters and rebuilds SHAP summaries without rerunning the full pipeline | `output/paper_ready/boosted_tuning_shap_summary.json`; SHAP figures/tables |
 | `11_compare_recency_boosters.ipynb` | Processed 2025 and 2026 features | Compares recency-weighted HGB, XGBoost, and optional CatBoost on the same holdout/validation splits | `output/paper_ready/tables/recency_booster_model_comparison.csv` |
 | `12_stacked_exact_model.ipynb` | Processed features; current-game and recent-start feature builders | Trains the stacked HGB/XGBoost/state-machine exact-pitch model | `output/stacked_exact/tables/stacked_current_game_model_comparison.csv`; summary JSON |
 | `13_export_site_data.ipynb` | Output tables and figures | Exports selected results into the website/app data format | `public/data/site-data.json` |
-| `14_make_colab_notebooks.ipynb` | Python scripts in `code/` | Converts selected scripts into notebook form | Generated Colab notebooks |
-| `15_make_review_notebooks.ipynb` | Python scripts and root notebooks | Creates review copies of notebooks for Colab editing | `colab_review_notebooks/` |
-| `16_make_final_paper_visuals.ipynb` | Existing model outputs and paper-ready tables | Builds the final narrative figure pack for the paper | `output/final_paper_visuals/figures/`; `output/final_paper_visuals/tables/` |
+| `14_final_paper_visuals.ipynb` | Existing model outputs and paper-ready tables | Builds the final narrative figure pack for the paper | `output/final_paper_visuals/figures/`; `output/final_paper_visuals/tables/` |
 
 ## Merge Diagnostics
 

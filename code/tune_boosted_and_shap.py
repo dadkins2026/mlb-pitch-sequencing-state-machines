@@ -10,7 +10,7 @@ import numpy as np
 import pandas as pd
 from sklearn.model_selection import train_test_split
 
-from paper_ready_analysis import (
+from paper_analysis import (
     PAPER_DIR,
     TABLE_DIR,
     arsenal_map,

@@ -26,7 +26,7 @@ from sklearn.preprocessing import LabelEncoder, OrdinalEncoder
 from sklearn.compose import ColumnTransformer
 from xgboost import XGBClassifier
 
-from paper_ready_analysis import (
+from paper_analysis import (
     MODEL_CAT,
     MODEL_NUM,
     OUTPUT_DIR,
