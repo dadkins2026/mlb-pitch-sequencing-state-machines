@@ -1,0 +1,21 @@
+# Python/runtime
+.venv/
+__pycache__/
+.cache/
+*.pyc
+
+# Local OS/editor files
+.DS_Store
+*.log
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Regenerated large data caches
+data/raw/
+data/processed/
+
+# Notebook runtime checkpoints
+.ipynb_checkpoints/

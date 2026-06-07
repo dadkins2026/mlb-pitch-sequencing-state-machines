@@ -1,0 +1,37 @@
+dataset,mix_type,pitch_type,pitch_label,share
+2025_holdout,Actual,FF,4-seam fastball (FF),0.31882382093004047
+2025_holdout,Actual,SI,sinker (SI),0.16081605682662922
+2025_holdout,Actual,CH,changeup (CH),0.13843231188568597
+2025_holdout,Actual,SL,slider (SL),0.11926984389196332
+2025_holdout,Actual,ST,sweeper (ST),0.07375898240687205
+2025_holdout,Actual,CU,curveball (CU),0.07334599818286941
+2025_holdout,Actual,FC,cutter (FC),0.06558189477161973
+2025_holdout,Actual,KC,knuckle curve (KC),0.03122160733459982
+2025_holdout,Actual,FS,splitter (FS),0.018749483769719997
+2025_holdout,Predicted,FF,4-seam fastball (FF),0.48294375154869085
+2025_holdout,Predicted,SI,sinker (SI),0.18319980176757247
+2025_holdout,Predicted,CH,changeup (CH),0.08548773436854712
+2025_holdout,Predicted,SL,slider (SL),0.06706863797802924
+2025_holdout,Predicted,ST,sweeper (ST),0.06087387461798959
+2025_holdout,Predicted,FC,cutter (FC),0.05624845130915999
+2025_holdout,Predicted,CU,curveball (CU),0.04088543817626167
+2025_holdout,Predicted,FS,splitter (FS),0.015197819443297267
+2025_holdout,Predicted,KC,knuckle curve (KC),0.008094490790451804
+2026_to_date,Actual,FF,4-seam fastball (FF),0.2873311169272123
+2026_to_date,Actual,SI,sinker (SI),0.18009478672985782
+2026_to_date,Actual,CH,changeup (CH),0.14408997665699935
+2026_to_date,Actual,SL,slider (SL),0.1086510575086652
+2026_to_date,Actual,ST,sweeper (ST),0.07738558392869774
+2026_to_date,Actual,CU,curveball (CU),0.07703190210087006
+2026_to_date,Actual,FC,cutter (FC),0.07017047464101295
+2026_to_date,Actual,FS,splitter (FS),0.03183136450449176
+2026_to_date,Actual,KC,knuckle curve (KC),0.023413737002192826
+2026_to_date,Predicted,FF,4-seam fastball (FF),0.46367687628209664
+2026_to_date,Predicted,SI,sinker (SI),0.18837094150102568
+2026_to_date,Predicted,CH,changeup (CH),0.0928768479875504
+2026_to_date,Predicted,SL,slider (SL),0.06295536535332814
+2026_to_date,Predicted,FC,cutter (FC),0.060408856192968804
+2026_to_date,Predicted,ST,sweeper (ST),0.055810992431208885
+2026_to_date,Predicted,CU,curveball (CU),0.049161774068048385
+2026_to_date,Predicted,FS,splitter (FS),0.01867440050930183
+2026_to_date,Predicted,KC,knuckle curve (KC),0.008063945674471246

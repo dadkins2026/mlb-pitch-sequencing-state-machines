@@ -1,0 +1,641 @@
+target_pitch_type,target_pitch_label,feature,mean_abs_shap
+FF,4-seam fastball (FF),Previous pitch: SI,0.023922374487942436
+FF,4-seam fastball (FF),Previous pitch: FF,0.02069787580656593
+FF,4-seam fastball (FF),Two pitches ago: SI,0.013456296761472806
+FF,4-seam fastball (FF),Previous pitch: FC,0.007809769768508302
+FF,4-seam fastball (FF),Pitcher: Cristopher Sánchez,0.006691155414221287
+FF,4-seam fastball (FF),balls,0.006592416577580357
+FF,4-seam fastball (FF),Two pitches ago: FF,0.00656089501812086
+FF,4-seam fastball (FF),Base state: ---,0.0054509670038423805
+FF,4-seam fastball (FF),prev release speed,0.0049840570273013635
+FF,4-seam fastball (FF),Pitcher: Framber Valdez,0.004899335206734524
+FF,4-seam fastball (FF),Pitcher: Patrick Corbin,0.004782739241243404
+FF,4-seam fastball (FF),Batter side: R,0.004471429531349871
+FF,4-seam fastball (FF),strikes,0.0044274513477540935
+FF,4-seam fastball (FF),Batter side: L,0.003913505184821258
+FF,4-seam fastball (FF),Pitcher: Quinn Priester,0.003543428889303661
+FF,4-seam fastball (FF),Pitcher: Logan Webb,0.0034773001637027324
+FF,4-seam fastball (FF),Pitcher: José Soriano,0.0034144003600717026
+FF,4-seam fastball (FF),score diff batting team,0.0033651610245523616
+FF,4-seam fastball (FF),Pitcher: Erick Fedde,0.0030407093562809496
+FF,4-seam fastball (FF),Pitcher: Clay Holmes,0.002744796995035476
+FF,4-seam fastball (FF),Pitcher: Chris Bassitt,0.002266578513347023
+FF,4-seam fastball (FF),Pitcher: Kyle Hendricks,0.0021141214354380915
+FF,4-seam fastball (FF),pitch number,0.002098402182841507
+FF,4-seam fastball (FF),Pitcher: Max Fried,0.0020590313406418305
+FF,4-seam fastball (FF),Count: 3-0,0.0019789428484139515
+FF,4-seam fastball (FF),Pitcher: Brady Singer,0.0018972613291074502
+FF,4-seam fastball (FF),Pitcher: Antonio Senzatela,0.0018150985404314162
+FF,4-seam fastball (FF),Pitcher: Mitchell Parker,0.0015464006150345691
+FF,4-seam fastball (FF),Previous result: called_strike,0.0014963550272678388
+FF,4-seam fastball (FF),Previous result: foul,0.0013470963492279073
+FF,4-seam fastball (FF),Two pitches ago: FC,0.001305991502078061
+FF,4-seam fastball (FF),Previous pitch: CH,0.0012379735604530462
+FF,4-seam fastball (FF),Previous result: ball,0.0012342858194187942
+FF,4-seam fastball (FF),Count: 1-1,0.0012236736075848986
+FF,4-seam fastball (FF),Pitcher: Freddy Peralta,0.0012230540978252387
+FF,4-seam fastball (FF),Previous pitch: SL,0.001220079931685092
+FF,4-seam fastball (FF),Count: 1-2,0.0011112430366349625
+FF,4-seam fastball (FF),Count: 3-2,0.0010945437772968882
+FF,4-seam fastball (FF),Two pitches ago: START,0.0010901368245734148
+FF,4-seam fastball (FF),Count: 0-1,0.0010566640328503823
+FF,4-seam fastball (FF),Previous pitch: ST,0.0009941862626578815
+FF,4-seam fastball (FF),Count: 2-2,0.0009362980177190249
+FF,4-seam fastball (FF),Pitcher: Ryne Nelson,0.0009275606137384954
+FF,4-seam fastball (FF),Pitcher: Kevin Gausman,0.0009118788242482102
+FF,4-seam fastball (FF),Pitcher: Andre Pallante,0.000871777033211113
+FF,4-seam fastball (FF),Pitcher: Merrill Kelly,0.0008591937095661287
+FF,4-seam fastball (FF),Pitcher: Taijuan Walker,0.0008410461376375155
+FF,4-seam fastball (FF),Base state: 12-,0.0008246557459419571
+FF,4-seam fastball (FF),Pitcher: Sandy Alcantara,0.0007901950483640903
+FF,4-seam fastball (FF),Base state: -2-,0.0007827663744713212
+FF,4-seam fastball (FF),Count: 0-0,0.0007701154937346125
+FF,4-seam fastball (FF),Count: 0-2,0.000759858827885847
+FF,4-seam fastball (FF),Count: 1-0,0.0007279708988830766
+FF,4-seam fastball (FF),Pitcher: Cal Quantrill,0.0007002134350153288
+FF,4-seam fastball (FF),Pitcher: Jose Quintana,0.0006949133768032827
+FF,4-seam fastball (FF),Previous result: swinging_strike,0.0006622781748186945
+FF,4-seam fastball (FF),Pitcher: Matthew Boyd,0.0006478933339964832
+FF,4-seam fastball (FF),Pitcher: Edward Cabrera,0.0006045402513417618
+FF,4-seam fastball (FF),Previous pitch: START,0.0005875680624165345
+FF,4-seam fastball (FF),Pitcher: Shota Imanaga,0.0005836101497171163
+FF,4-seam fastball (FF),Base state: 1--,0.0005826237532588364
+FF,4-seam fastball (FF),Pitcher: Joe Ryan,0.0005715030297495212
+FF,4-seam fastball (FF),Count: 2-0,0.0005550643975712079
+FF,4-seam fastball (FF),Pitcher: Robbie Ray,0.0005510022476143781
+FF,4-seam fastball (FF),Pitcher: Lucas Giolito,0.0005476310463918037
+FF,4-seam fastball (FF),Previous pitch: KC,0.0005046403974181706
+FF,4-seam fastball (FF),Previous result: START,0.0004962156313442899
+FF,4-seam fastball (FF),Two pitches ago: SL,0.00047786134411252813
+FF,4-seam fastball (FF),Pitcher: José Berríos,0.00047217420984800666
+FF,4-seam fastball (FF),Pitcher: Eduardo Rodriguez,0.0004369612131265043
+FF,4-seam fastball (FF),Pitcher: Tyler Anderson,0.0004345488649379051
+FF,4-seam fastball (FF),Pitcher: Brayan Bello,0.0003911977795597682
+FF,4-seam fastball (FF),Pitcher: Sonny Gray,0.00038939801546292256
+FF,4-seam fastball (FF),Pitcher: Dylan Cease,0.00037316566932466607
+FF,4-seam fastball (FF),Pitcher: Bryce Elder,0.0003649730910735215
+FF,4-seam fastball (FF),Pitcher: Ranger Suarez,0.00033478489536511264
+FF,4-seam fastball (FF),Pitcher: Sean Burke,0.0003108938720085299
+FF,4-seam fastball (FF),Pitcher: Colin Rea,0.00029783975934202946
+FF,4-seam fastball (FF),Previous pitch: CU,0.00029017316604664417
+FF,4-seam fastball (FF),Two pitches ago: KC,0.00028028658227116204
+FF,4-seam fastball (FF),Count: 3-1,0.0002792177577794321
+FF,4-seam fastball (FF),Two pitches ago: CH,0.0002665136925435374
+FF,4-seam fastball (FF),Count: 2-1,0.00025782751130511204
+FF,4-seam fastball (FF),Pitcher: Nick Pivetta,0.0002495834811300658
+FF,4-seam fastball (FF),Pitcher: Spencer Strider,0.00023863458334794337
+FF,4-seam fastball (FF),Pitcher: Michael Wacha,0.00022944598463062405
+FF,4-seam fastball (FF),Previous pitch: FS,0.00022902334723150377
+FF,4-seam fastball (FF),Pitcher: Tomoyuki Sugano,0.00021964144182373848
+FF,4-seam fastball (FF),Pitcher: Charlie Morton,0.0002083429277982968
+FF,4-seam fastball (FF),Pitcher: Jeffrey Springs,0.000206529403836347
+FF,4-seam fastball (FF),Pitcher: Dustin May,0.00018960239484538748
+FF,4-seam fastball (FF),Pitcher: Seth Lugo,0.0001777388463882225
+FF,4-seam fastball (FF),Pitcher: Andrew Heaney,0.00017352621395553676
+FF,4-seam fastball (FF),Pitcher: Zack Wheeler,0.00017292854387858495
+FF,4-seam fastball (FF),Base state: -23,0.0001673183372935784
+FF,4-seam fastball (FF),Pitcher: Jacob deGrom,0.0001582748239258777
+FF,4-seam fastball (FF),Pitcher: Andrew Abbott,0.00015666423834931618
+FF,4-seam fastball (FF),Two pitches ago: ST,0.00015340180772048805
+FF,4-seam fastball (FF),Previous result: blocked_ball,0.0001518382958999843
+FF,4-seam fastball (FF),Pitcher: Brad Lord,0.00014943673621369005
+FF,4-seam fastball (FF),Pitcher: Zack Littell,0.0001440790442364671
+FF,4-seam fastball (FF),Pitcher: Nick Lodolo,0.0001316034625484231
+FF,4-seam fastball (FF),Two pitches ago: CU,0.00013093354434442908
+FF,4-seam fastball (FF),Pitcher: Jack Flaherty,0.000130108362892436
+FF,4-seam fastball (FF),Base state: --3,0.0001289904800734037
+FF,4-seam fastball (FF),Pitcher: MacKenzie Gore,0.00012868476963987928
+FF,4-seam fastball (FF),Pitcher: Ryan Pepiot,0.00012444360383740595
+FF,4-seam fastball (FF),Pitcher: Brandon Pfaadt,0.00011520868488817737
+FF,4-seam fastball (FF),Pitcher: Luis Castillo,0.00011156781182720694
+FF,4-seam fastball (FF),Base state: 1-3,0.0001093922162517274
+FF,4-seam fastball (FF),Pitcher: Nick Martinez,9.866797981422319e-05
+FF,4-seam fastball (FF),Pitcher: Justin Verlander,9.610796643248487e-05
+FF,4-seam fastball (FF),Pitcher: Will Warren,9.411783721085606e-05
+FF,4-seam fastball (FF),Pitcher: Tanner Bibee,9.378961160534939e-05
+FF,4-seam fastball (FF),Pitcher: Garrett Crochet,8.988102872105623e-05
+FF,4-seam fastball (FF),Pitcher: Walker Buehler,8.042433591551291e-05
+FF,4-seam fastball (FF),Pitcher: Zac Gallen,7.624809659979792e-05
+FF,4-seam fastball (FF),Pitcher: Carlos Rodón,7.623221493215437e-05
+FF,4-seam fastball (FF),Pitcher: Randy Vásquez,7.352101719946382e-05
+FF,4-seam fastball (FF),Pitcher: Gavin Williams,7.233065812333633e-05
+FF,4-seam fastball (FF),Pitcher: Casey Mize,6.632345753720393e-05
+FF,4-seam fastball (FF),Pitcher: Miles Mikolas,5.8245241391395976e-05
+FF,4-seam fastball (FF),Pitcher: Noah Cameron,5.5387267537287216e-05
+FF,4-seam fastball (FF),Pitcher: Jack Leiter,5.500862616005328e-05
+FF,4-seam fastball (FF),Pitcher: Michael Lorenzen,4.839448901729917e-05
+FF,4-seam fastball (FF),Pitcher: Mitch Keller,4.678552833866831e-05
+FF,4-seam fastball (FF),Pitcher: Bryan Woo,4.6340242342641296e-05
+FF,4-seam fastball (FF),Pitcher: Davis Martin,4.002140687591577e-05
+FF,4-seam fastball (FF),Pitcher: Yoshinobu Yamamoto,3.920117454466583e-05
+FF,4-seam fastball (FF),Pitcher: David Peterson,3.2256108674954605e-05
+FF,4-seam fastball (FF),Pitcher: Chris Paddack,3.212247156089341e-05
+FF,4-seam fastball (FF),Previous result: foul_tip,2.7357300170283177e-05
+FF,4-seam fastball (FF),Pitcher: Tarik Skubal,2.2297886447419788e-05
+FF,4-seam fastball (FF),Pitcher: Dean Kremer,2.11299594769079e-05
+FF,4-seam fastball (FF),Pitcher: Taj Bradley,2.067326447751264e-05
+FF,4-seam fastball (FF),Pitcher: Slade Cecconi,1.9404900978829185e-05
+FF,4-seam fastball (FF),Two pitches ago: FS,1.861328342911007e-05
+FF,4-seam fastball (FF),Pitcher: Matthew Liberatore,1.854824829978417e-05
+FF,4-seam fastball (FF),Pitcher: Paul Skenes,1.836953963329856e-05
+FF,4-seam fastball (FF),Pitcher: Jesús Luzardo,1.6918048504774016e-05
+FF,4-seam fastball (FF),Pitcher: Shane Smith,1.6907368859968725e-05
+FF,4-seam fastball (FF),Pitcher: Shane Baz,1.638248976302214e-05
+FF,4-seam fastball (FF),Base state: 123,1.5898660276507866e-05
+FF,4-seam fastball (FF),Pitcher: Kyle Freeland,1.5106581637897075e-05
+FF,4-seam fastball (FF),Pitcher: Yusei Kikuchi,1.4535852370706839e-05
+FF,4-seam fastball (FF),Pitcher: Luis Severino,1.4290296782388375e-05
+FF,4-seam fastball (FF),Pitcher: JP Sears,1.156158112571423e-05
+FF,4-seam fastball (FF),Previous pitch: SV,8.914541807119674e-06
+FF,4-seam fastball (FF),Pitcher: Germán Márquez,5.831674379497598e-06
+FF,4-seam fastball (FF),Pitcher: Hunter Brown,5.572513846235593e-06
+FF,4-seam fastball (FF),Pitcher: Bailey Ober,1.8775261909009472e-06
+FF,4-seam fastball (FF),Previous result: infrequent_sklearn,0.0
+FF,4-seam fastball (FF),Pitcher: Logan Allen,0.0
+FF,4-seam fastball (FF),Pitcher: Logan Gilbert,0.0
+FF,4-seam fastball (FF),Pitcher: Jake Irvin,0.0
+FF,4-seam fastball (FF),Two pitches ago: infrequent_sklearn,0.0
+FF,4-seam fastball (FF),Previous pitch: infrequent_sklearn,0.0
+FF,4-seam fastball (FF),Previous result: foul_bunt,0.0
+FF,4-seam fastball (FF),Pitcher: Drew Rasmussen,0.0
+FF,4-seam fastball (FF),Previous result: swinging_strike_blocked,0.0
+SI,sinker (SI),Previous pitch: FF,0.03637494768316849
+SI,sinker (SI),Previous pitch: SI,0.02379440033154501
+SI,sinker (SI),Two pitches ago: FF,0.01667476708988472
+SI,sinker (SI),Batter side: L,0.016191151921558258
+SI,sinker (SI),strikes,0.015610587021682627
+SI,sinker (SI),Two pitches ago: SI,0.014990289739925486
+SI,sinker (SI),Batter side: R,0.012089054461838446
+SI,sinker (SI),Count: 0-2,0.008381702848434367
+SI,sinker (SI),balls,0.008343202304882297
+SI,sinker (SI),Previous result: START,0.007125933063553405
+SI,sinker (SI),prev release speed,0.007052059399611793
+SI,sinker (SI),pitch number,0.0058692339940953344
+SI,sinker (SI),Count: 1-2,0.00576807914501118
+SI,sinker (SI),Previous result: ball,0.005529666913285424
+SI,sinker (SI),Count: 0-0,0.004949413194299478
+SI,sinker (SI),Pitcher: Cristopher Sánchez,0.0041738285257957196
+SI,sinker (SI),Previous pitch: CH,0.0033627460670352977
+SI,sinker (SI),Pitcher: Framber Valdez,0.0032338027527771917
+SI,sinker (SI),Previous pitch: FC,0.0030903410250702834
+SI,sinker (SI),Pitcher: José Soriano,0.0029435094518497308
+SI,sinker (SI),Previous pitch: START,0.0028706638702176357
+SI,sinker (SI),Pitcher: Kyle Hendricks,0.0027485823349887987
+SI,sinker (SI),Pitcher: Freddy Peralta,0.0024148476250972664
+SI,sinker (SI),Previous result: foul,0.0018851019973377384
+SI,sinker (SI),Base state: 1--,0.0018499234816985492
+SI,sinker (SI),Two pitches ago: START,0.0018020388548785952
+SI,sinker (SI),Previous pitch: ST,0.0017483560184236044
+SI,sinker (SI),score diff batting team,0.0016181650693181822
+SI,sinker (SI),Pitcher: Jeffrey Springs,0.0016162248433791223
+SI,sinker (SI),Pitcher: Justin Verlander,0.00143249821008313
+SI,sinker (SI),Count: 3-2,0.0014295921598507656
+SI,sinker (SI),Previous pitch: CU,0.0014078143382339544
+SI,sinker (SI),Previous result: swinging_strike,0.0014065513789858122
+SI,sinker (SI),Pitcher: Robbie Ray,0.0012586183212473564
+SI,sinker (SI),Pitcher: Brady Singer,0.0011830907272190713
+SI,sinker (SI),Pitcher: Yusei Kikuchi,0.00118220384077019
+SI,sinker (SI),Previous pitch: KC,0.0011069006878226336
+SI,sinker (SI),Count: 3-1,0.0010315188297979475
+SI,sinker (SI),Count: 1-1,0.0009903761782250932
+SI,sinker (SI),Base state: ---,0.0009862394187049096
+SI,sinker (SI),Previous pitch: FS,0.0008866957496033357
+SI,sinker (SI),Pitcher: Kevin Gausman,0.000886088070993952
+SI,sinker (SI),Pitcher: Clay Holmes,0.0008551928458301872
+SI,sinker (SI),Pitcher: Mitchell Parker,0.00085208806593427
+SI,sinker (SI),Count: 0-1,0.0008356044795147608
+SI,sinker (SI),Previous pitch: SL,0.0008297458782345603
+SI,sinker (SI),Pitcher: MacKenzie Gore,0.0007791257952885781
+SI,sinker (SI),Base state: -2-,0.0007725108675460097
+SI,sinker (SI),Pitcher: Chris Bassitt,0.0007557672475975938
+SI,sinker (SI),Previous result: called_strike,0.0007116484501708185
+SI,sinker (SI),Pitcher: Bryce Elder,0.0007000882074080321
+SI,sinker (SI),Pitcher: Zac Gallen,0.0006131007545763096
+SI,sinker (SI),Count: 2-0,0.0006015229882728417
+SI,sinker (SI),Pitcher: Andrew Abbott,0.0005716980562736328
+SI,sinker (SI),Pitcher: Shane Baz,0.0005633345537996233
+SI,sinker (SI),Two pitches ago: CH,0.000563002143580017
+SI,sinker (SI),Count: 2-2,0.0005348411441400559
+SI,sinker (SI),Count: 1-0,0.0005142677250019488
+SI,sinker (SI),Pitcher: Tyler Anderson,0.0005074522203750687
+SI,sinker (SI),Two pitches ago: SL,0.0004559680883489323
+SI,sinker (SI),Pitcher: Noah Cameron,0.00043759324451492866
+SI,sinker (SI),Pitcher: Lucas Giolito,0.00042534888734010887
+SI,sinker (SI),Pitcher: Matthew Boyd,0.00042070617212228373
+SI,sinker (SI),Pitcher: Jacob deGrom,0.0004117801173541993
+SI,sinker (SI),Pitcher: Erick Fedde,0.0003933377215400835
+SI,sinker (SI),Two pitches ago: KC,0.00039333266112776514
+SI,sinker (SI),Count: 2-1,0.00036898645076589945
+SI,sinker (SI),Two pitches ago: CU,0.0003567965755742125
+SI,sinker (SI),Pitcher: Sandy Alcantara,0.0003462759479579441
+SI,sinker (SI),Pitcher: Kyle Freeland,0.0003355939559596293
+SI,sinker (SI),Two pitches ago: FC,0.000312865490873155
+SI,sinker (SI),Pitcher: Ryne Nelson,0.00030098070179557625
+SI,sinker (SI),Pitcher: Nick Pivetta,0.0002588071363119757
+SI,sinker (SI),Pitcher: Quinn Priester,0.00022740242230367638
+SI,sinker (SI),Pitcher: Dylan Cease,0.0002096509899722532
+SI,sinker (SI),Pitcher: Logan Gilbert,0.0002093594290738148
+SI,sinker (SI),Pitcher: Logan Webb,0.0002077801669646408
+SI,sinker (SI),Pitcher: Shota Imanaga,0.00020563931896752045
+SI,sinker (SI),Base state: 12-,0.0002023916927489183
+SI,sinker (SI),Pitcher: Paul Skenes,0.00020007967656290139
+SI,sinker (SI),Pitcher: Carlos Rodón,0.00019734760023808228
+SI,sinker (SI),Pitcher: Matthew Liberatore,0.00017639764343174637
+SI,sinker (SI),Pitcher: Jose Quintana,0.00017331199785635402
+SI,sinker (SI),Pitcher: Ryan Pepiot,0.00016604929392065193
+SI,sinker (SI),Pitcher: Antonio Senzatela,0.0001510501577125967
+SI,sinker (SI),Pitcher: Chris Paddack,0.00014384339955790775
+SI,sinker (SI),Base state: --3,0.00012934001958771888
+SI,sinker (SI),Pitcher: Bryan Woo,0.00011891014066512961
+SI,sinker (SI),Pitcher: Jesús Luzardo,0.00011343011663671651
+SI,sinker (SI),Two pitches ago: ST,0.00011247901745468423
+SI,sinker (SI),Pitcher: Yoshinobu Yamamoto,0.000109909228473999
+SI,sinker (SI),Base state: 1-3,0.00010932230545614442
+SI,sinker (SI),Pitcher: Brayan Bello,0.00010784164491712723
+SI,sinker (SI),Pitcher: Jack Flaherty,0.00010230407435109417
+SI,sinker (SI),Pitcher: Spencer Strider,0.0001008259957545796
+SI,sinker (SI),Pitcher: Ranger Suarez,9.931862165406801e-05
+SI,sinker (SI),Pitcher: Dean Kremer,8.91898256547549e-05
+SI,sinker (SI),Pitcher: Luis Severino,8.798742441100299e-05
+SI,sinker (SI),Pitcher: Logan Allen,8.714995421818274e-05
+SI,sinker (SI),Pitcher: José Berríos,8.038852807793532e-05
+SI,sinker (SI),Pitcher: Andre Pallante,8.013972460768742e-05
+SI,sinker (SI),Pitcher: Bailey Ober,6.991725609944924e-05
+SI,sinker (SI),Pitcher: Sean Burke,6.776298325285212e-05
+SI,sinker (SI),Pitcher: JP Sears,6.756930758926394e-05
+SI,sinker (SI),Pitcher: Drew Rasmussen,6.741546299342107e-05
+SI,sinker (SI),Pitcher: Patrick Corbin,6.591002776501155e-05
+SI,sinker (SI),Pitcher: Gavin Williams,6.206230825355326e-05
+SI,sinker (SI),Base state: -23,5.6706916303002314e-05
+SI,sinker (SI),Pitcher: Casey Mize,4.826228312337059e-05
+SI,sinker (SI),Count: 3-0,4.8101979160151376e-05
+SI,sinker (SI),Pitcher: Miles Mikolas,4.79669002671055e-05
+SI,sinker (SI),Pitcher: Garrett Crochet,4.5376269070003204e-05
+SI,sinker (SI),Pitcher: Zack Wheeler,4.357391787462982e-05
+SI,sinker (SI),Previous result: blocked_ball,3.97936661333567e-05
+SI,sinker (SI),Two pitches ago: FS,3.8104080965646046e-05
+SI,sinker (SI),Pitcher: Tanner Bibee,3.7595105995969816e-05
+SI,sinker (SI),Pitcher: Zack Littell,3.1974707559074186e-05
+SI,sinker (SI),Pitcher: Davis Martin,2.8830211160417897e-05
+SI,sinker (SI),Pitcher: Charlie Morton,2.7616174427929434e-05
+SI,sinker (SI),Pitcher: Andrew Heaney,2.5641940399779218e-05
+SI,sinker (SI),Pitcher: Cal Quantrill,2.4309912127054185e-05
+SI,sinker (SI),Pitcher: Eduardo Rodriguez,2.340194872152492e-05
+SI,sinker (SI),Pitcher: Mitch Keller,1.7154203679441127e-05
+SI,sinker (SI),Pitcher: Hunter Brown,1.679880355059814e-05
+SI,sinker (SI),Pitcher: Michael Wacha,1.5841617216059637e-05
+SI,sinker (SI),Previous pitch: SV,1.5154179267438888e-05
+SI,sinker (SI),Pitcher: Nick Lodolo,8.71323480838149e-06
+SI,sinker (SI),Pitcher: Max Fried,8.652509710076163e-06
+SI,sinker (SI),Pitcher: Germán Márquez,7.628409951734338e-06
+SI,sinker (SI),Pitcher: Will Warren,7.289871153030538e-06
+SI,sinker (SI),Pitcher: Tarik Skubal,6.805375221707556e-06
+SI,sinker (SI),Base state: 123,2.4893103142982665e-06
+SI,sinker (SI),Previous result: infrequent_sklearn,0.0
+SI,sinker (SI),Pitcher: Dustin May,0.0
+SI,sinker (SI),Previous result: swinging_strike_blocked,0.0
+SI,sinker (SI),Pitcher: Colin Rea,0.0
+SI,sinker (SI),Pitcher: Brandon Pfaadt,0.0
+SI,sinker (SI),Pitcher: David Peterson,0.0
+SI,sinker (SI),Previous result: foul_tip,0.0
+SI,sinker (SI),Pitcher: Brad Lord,0.0
+SI,sinker (SI),Previous result: foul_bunt,0.0
+SI,sinker (SI),Pitcher: Jake Irvin,0.0
+SI,sinker (SI),Pitcher: Edward Cabrera,0.0
+SI,sinker (SI),Two pitches ago: infrequent_sklearn,0.0
+SI,sinker (SI),Pitcher: Walker Buehler,0.0
+SI,sinker (SI),Pitcher: Tomoyuki Sugano,0.0
+SI,sinker (SI),Pitcher: Taj Bradley,0.0
+SI,sinker (SI),Pitcher: Taijuan Walker,0.0
+SI,sinker (SI),Pitcher: Sonny Gray,0.0
+SI,sinker (SI),Pitcher: Slade Cecconi,0.0
+SI,sinker (SI),Pitcher: Shane Smith,0.0
+SI,sinker (SI),Pitcher: Randy Vásquez,0.0
+SI,sinker (SI),Pitcher: Nick Martinez,0.0
+SI,sinker (SI),Previous pitch: infrequent_sklearn,0.0
+SI,sinker (SI),Pitcher: Michael Lorenzen,0.0
+SI,sinker (SI),Pitcher: Merrill Kelly,0.0
+SI,sinker (SI),Pitcher: Luis Castillo,0.0
+SI,sinker (SI),Pitcher: Joe Ryan,0.0
+SI,sinker (SI),Pitcher: Jack Leiter,0.0
+SI,sinker (SI),Pitcher: Seth Lugo,0.0
+CH,changeup (CH),Previous pitch: CH,0.024309562822744536
+CH,changeup (CH),prev release speed,0.02346882157199541
+CH,changeup (CH),Two pitches ago: CH,0.014918517562567329
+CH,changeup (CH),Previous result: START,0.011266989189285738
+CH,changeup (CH),strikes,0.010204799118457541
+CH,changeup (CH),Previous pitch: START,0.0093075649553419
+CH,changeup (CH),balls,0.009207224000226156
+CH,changeup (CH),Batter side: L,0.0066805251440099555
+CH,changeup (CH),Previous pitch: FS,0.006580913871266219
+CH,changeup (CH),pitch number,0.006352999672149117
+CH,changeup (CH),Batter side: R,0.005416755934281365
+CH,changeup (CH),Count: 0-0,0.005322537857283999
+CH,changeup (CH),Pitcher: Cristopher Sánchez,0.0033943427035913677
+CH,changeup (CH),Two pitches ago: FS,0.003365862784889338
+CH,changeup (CH),Previous pitch: FF,0.0032383785054070557
+CH,changeup (CH),Pitcher: Brady Singer,0.0027269336680796064
+CH,changeup (CH),Count: 0-1,0.002613594400067246
+CH,changeup (CH),Previous result: foul,0.0025880112989017253
+CH,changeup (CH),Pitcher: Andre Pallante,0.002451725083472992
+CH,changeup (CH),Pitcher: Yoshinobu Yamamoto,0.0023088505151152676
+CH,changeup (CH),Pitcher: Gavin Williams,0.002293888217181435
+CH,changeup (CH),Count: 1-1,0.002197700698666511
+CH,changeup (CH),Pitcher: Garrett Crochet,0.0021864690307788416
+CH,changeup (CH),Pitcher: Kyle Hendricks,0.002182251722530749
+CH,changeup (CH),Pitcher: Logan Webb,0.0021742821890926222
+CH,changeup (CH),Two pitches ago: START,0.0019274427610722108
+CH,changeup (CH),Previous pitch: ST,0.0019251321100250173
+CH,changeup (CH),Previous pitch: CU,0.0019217316888499158
+CH,changeup (CH),Pitcher: Zack Littell,0.001859079567920893
+CH,changeup (CH),Pitcher: Mitchell Parker,0.0018102872791219617
+CH,changeup (CH),Two pitches ago: SI,0.0017868222020259244
+CH,changeup (CH),Pitcher: Tarik Skubal,0.0017792102750250193
+CH,changeup (CH),score diff batting team,0.001771593279412476
+CH,changeup (CH),Pitcher: Dylan Cease,0.0017332120338783947
+CH,changeup (CH),Pitcher: Joe Ryan,0.0017023656342832214
+CH,changeup (CH),Pitcher: Nick Pivetta,0.0016714392080326363
+CH,changeup (CH),Base state: ---,0.001599167325164045
+CH,changeup (CH),Pitcher: Dean Kremer,0.0015894020330458195
+CH,changeup (CH),Pitcher: Kevin Gausman,0.0015815994440607376
+CH,changeup (CH),Previous pitch: SL,0.0014162978721432235
+CH,changeup (CH),Count: 2-2,0.0013736043431354142
+CH,changeup (CH),Pitcher: Zack Wheeler,0.0013084255110856543
+CH,changeup (CH),Pitcher: Tyler Anderson,0.0012334552904700099
+CH,changeup (CH),Pitcher: Jeffrey Springs,0.001176931120335583
+CH,changeup (CH),Previous pitch: SI,0.00114164230079684
+CH,changeup (CH),Count: 3-0,0.0011388053619425383
+CH,changeup (CH),Count: 2-0,0.001102996684042978
+CH,changeup (CH),Pitcher: Drew Rasmussen,0.0010493997619288632
+CH,changeup (CH),Previous pitch: KC,0.0010468902000038392
+CH,changeup (CH),Previous result: ball,0.0010096328823757407
+CH,changeup (CH),Pitcher: José Soriano,0.0009952576189831456
+CH,changeup (CH),Pitcher: Taijuan Walker,0.0009393007152331253
+CH,changeup (CH),Previous result: swinging_strike,0.0009171890771714283
+CH,changeup (CH),Pitcher: Tomoyuki Sugano,0.0008917951409399509
+CH,changeup (CH),Count: 3-1,0.0008706085190404604
+CH,changeup (CH),Pitcher: Colin Rea,0.0008674453332995213
+CH,changeup (CH),Pitcher: Zac Gallen,0.00082037523757961
+CH,changeup (CH),Two pitches ago: FF,0.0008071855534718604
+CH,changeup (CH),Count: 1-2,0.0008006013153367884
+CH,changeup (CH),Pitcher: Merrill Kelly,0.0007770909271897342
+CH,changeup (CH),Pitcher: Chris Bassitt,0.0007351871724543279
+CH,changeup (CH),Pitcher: Taj Bradley,0.0007130030748634824
+CH,changeup (CH),Previous result: called_strike,0.000709842463929146
+CH,changeup (CH),Count: 1-0,0.0006836334302398331
+CH,changeup (CH),Pitcher: Casey Mize,0.0006606390868210299
+CH,changeup (CH),Count: 3-2,0.0006397153143772315
+CH,changeup (CH),Pitcher: Dustin May,0.0006345073433251399
+CH,changeup (CH),Two pitches ago: CU,0.0006342883990435355
+CH,changeup (CH),Pitcher: Nick Martinez,0.0006268064664847444
+CH,changeup (CH),Two pitches ago: FC,0.0006214702055576882
+CH,changeup (CH),Pitcher: Jack Flaherty,0.0006211516629481819
+CH,changeup (CH),Two pitches ago: SL,0.0006170510786946077
+CH,changeup (CH),Previous pitch: FC,0.000613804447757287
+CH,changeup (CH),Pitcher: Ryan Pepiot,0.0006000132427640465
+CH,changeup (CH),Pitcher: Shota Imanaga,0.0005727195570860683
+CH,changeup (CH),Two pitches ago: ST,0.0005138148689324158
+CH,changeup (CH),Pitcher: Matthew Boyd,0.00047638810205361264
+CH,changeup (CH),Pitcher: Chris Paddack,0.0004574181996965805
+CH,changeup (CH),Two pitches ago: KC,0.00045617730762356724
+CH,changeup (CH),Pitcher: Bailey Ober,0.0004294939403018071
+CH,changeup (CH),Pitcher: Sonny Gray,0.000424004152795212
+CH,changeup (CH),Base state: -2-,0.000411152205357505
+CH,changeup (CH),Base state: 1--,0.000406858866887509
+CH,changeup (CH),Pitcher: Michael Wacha,0.00037017634341459835
+CH,changeup (CH),Base state: 1-3,0.0003595388981040807
+CH,changeup (CH),Pitcher: Sandy Alcantara,0.000338483201586105
+CH,changeup (CH),Base state: 12-,0.0003127534766620496
+CH,changeup (CH),Count: 0-2,0.00030971666858319784
+CH,changeup (CH),Pitcher: Justin Verlander,0.0002978608688008411
+CH,changeup (CH),Pitcher: Logan Gilbert,0.00029206527036305794
+CH,changeup (CH),Pitcher: Luis Severino,0.0002860026587881738
+CH,changeup (CH),Pitcher: Eduardo Rodriguez,0.0002848379528652006
+CH,changeup (CH),Pitcher: Davis Martin,0.00027107346723776544
+CH,changeup (CH),Pitcher: Freddy Peralta,0.00026667646143820224
+CH,changeup (CH),Pitcher: Andrew Abbott,0.0002610858531236606
+CH,changeup (CH),Pitcher: Framber Valdez,0.00025725888467238766
+CH,changeup (CH),Pitcher: Ryne Nelson,0.0002412523611664897
+CH,changeup (CH),Pitcher: Quinn Priester,0.00022068001008318687
+CH,changeup (CH),Pitcher: Cal Quantrill,0.000216832715634719
+CH,changeup (CH),Pitcher: Matthew Liberatore,0.0002081497357182889
+CH,changeup (CH),Pitcher: Jose Quintana,0.00020696183338724384
+CH,changeup (CH),Pitcher: Nick Lodolo,0.00019856719863485883
+CH,changeup (CH),Pitcher: Randy Vásquez,0.00018157022909757577
+CH,changeup (CH),Pitcher: Jesús Luzardo,0.00017613689086690536
+CH,changeup (CH),Pitcher: Miles Mikolas,0.0001638089003115095
+CH,changeup (CH),Pitcher: Germán Márquez,0.00015449559214932577
+CH,changeup (CH),Count: 2-1,0.00014991548575555674
+CH,changeup (CH),Previous result: blocked_ball,0.00014714951385373995
+CH,changeup (CH),Pitcher: Noah Cameron,0.00014130452584690763
+CH,changeup (CH),Pitcher: Logan Allen,0.00013426036843106396
+CH,changeup (CH),Base state: --3,0.0001326296357079532
+CH,changeup (CH),Pitcher: Jacob deGrom,0.00010969406154315123
+CH,changeup (CH),Pitcher: Kyle Freeland,0.00010533249828372948
+CH,changeup (CH),Pitcher: Carlos Rodón,0.00010322599125787572
+CH,changeup (CH),Pitcher: Antonio Senzatela,0.00010179279968496848
+CH,changeup (CH),Pitcher: Spencer Strider,9.42773035486923e-05
+CH,changeup (CH),Pitcher: Will Warren,8.640875296636863e-05
+CH,changeup (CH),Pitcher: Edward Cabrera,8.50098684951989e-05
+CH,changeup (CH),Pitcher: Lucas Giolito,7.857389206418642e-05
+CH,changeup (CH),Pitcher: Robbie Ray,7.816141713582061e-05
+CH,changeup (CH),Pitcher: Sean Burke,7.60700285303973e-05
+CH,changeup (CH),Pitcher: Tanner Bibee,6.682393665533624e-05
+CH,changeup (CH),Pitcher: Ranger Suarez,6.592510095466115e-05
+CH,changeup (CH),Pitcher: Patrick Corbin,6.420000646612115e-05
+CH,changeup (CH),Pitcher: Jake Irvin,5.641282621160466e-05
+CH,changeup (CH),Pitcher: Brayan Bello,5.085390532992653e-05
+CH,changeup (CH),Pitcher: Slade Cecconi,5.026944534142298e-05
+CH,changeup (CH),Pitcher: Luis Castillo,5.011458174924926e-05
+CH,changeup (CH),Pitcher: David Peterson,5.008288191813088e-05
+CH,changeup (CH),Pitcher: Michael Lorenzen,4.971019671030565e-05
+CH,changeup (CH),Pitcher: Andrew Heaney,4.857939717673214e-05
+CH,changeup (CH),Pitcher: Hunter Brown,4.472222976902413e-05
+CH,changeup (CH),Base state: -23,3.976546680382592e-05
+CH,changeup (CH),Pitcher: JP Sears,3.727055333540316e-05
+CH,changeup (CH),Pitcher: Brad Lord,3.363026601305642e-05
+CH,changeup (CH),Pitcher: Shane Baz,3.3549402999076086e-05
+CH,changeup (CH),Pitcher: Mitch Keller,2.709352177717586e-05
+CH,changeup (CH),Pitcher: Charlie Morton,2.5443304646807726e-05
+CH,changeup (CH),Pitcher: José Berríos,2.5055144926367724e-05
+CH,changeup (CH),Pitcher: Shane Smith,2.452805903658164e-05
+CH,changeup (CH),Pitcher: Erick Fedde,2.138210613178597e-05
+CH,changeup (CH),Pitcher: Max Fried,2.0946649436823125e-05
+CH,changeup (CH),Base state: 123,2.03742331411305e-05
+CH,changeup (CH),Pitcher: Bryce Elder,1.990273932412819e-05
+CH,changeup (CH),Previous result: foul_tip,1.848882909182859e-05
+CH,changeup (CH),Pitcher: MacKenzie Gore,1.7244599275638685e-05
+CH,changeup (CH),Pitcher: Yusei Kikuchi,1.2278834112737891e-05
+CH,changeup (CH),Pitcher: Brandon Pfaadt,7.609513099203755e-06
+CH,changeup (CH),Pitcher: Paul Skenes,7.488674282036965e-06
+CH,changeup (CH),Pitcher: Bryan Woo,7.099270976917287e-06
+CH,changeup (CH),Previous result: infrequent_sklearn,0.0
+CH,changeup (CH),Previous result: swinging_strike_blocked,0.0
+CH,changeup (CH),Previous result: foul_bunt,0.0
+CH,changeup (CH),Two pitches ago: infrequent_sklearn,0.0
+CH,changeup (CH),Previous pitch: infrequent_sklearn,0.0
+CH,changeup (CH),Previous pitch: SV,0.0
+CH,changeup (CH),Pitcher: Clay Holmes,0.0
+CH,changeup (CH),Pitcher: Walker Buehler,0.0
+CH,changeup (CH),Pitcher: Jack Leiter,0.0
+CH,changeup (CH),Pitcher: Seth Lugo,0.0
+SL,slider (SL),Previous pitch: SL,0.03830049014421012
+SL,slider (SL),Two pitches ago: SL,0.01971728372121809
+SL,slider (SL),prev release speed,0.015029656763678593
+SL,slider (SL),Batter side: L,0.01246347148964876
+SL,slider (SL),Batter side: R,0.012166111482723478
+SL,slider (SL),Pitcher: Garrett Crochet,0.008290857986817257
+SL,slider (SL),Previous pitch: ST,0.007525191469935574
+SL,slider (SL),Pitcher: Patrick Corbin,0.005891014824155378
+SL,slider (SL),Pitcher: Jacob deGrom,0.005394080988788177
+SL,slider (SL),balls,0.0053059859309709445
+SL,slider (SL),Pitcher: Dylan Cease,0.004894657067503435
+SL,slider (SL),Pitcher: Logan Webb,0.004864389396115229
+SL,slider (SL),Previous pitch: FC,0.00462282622043734
+SL,slider (SL),Pitcher: Yusei Kikuchi,0.004395628041494645
+SL,slider (SL),Pitcher: Tanner Bibee,0.004347730852045929
+SL,slider (SL),strikes,0.003986016478954118
+SL,slider (SL),Pitcher: Kyle Hendricks,0.0037943784562024037
+SL,slider (SL),Pitcher: Carlos Rodón,0.0037287746261665243
+SL,slider (SL),Pitcher: Will Warren,0.0032991565055330435
+SL,slider (SL),Pitcher: Zack Wheeler,0.0032898581230727487
+SL,slider (SL),Pitcher: Charlie Morton,0.003287018965534193
+SL,slider (SL),pitch number,0.0032808924619447274
+SL,slider (SL),Pitcher: Dean Kremer,0.0031649275470079425
+SL,slider (SL),Pitcher: Gavin Williams,0.003156481060761961
+SL,slider (SL),Pitcher: José Berríos,0.0030594500861045263
+SL,slider (SL),Pitcher: Brady Singer,0.003039525010318026
+SL,slider (SL),Pitcher: Brandon Pfaadt,0.002986975626108442
+SL,slider (SL),Pitcher: Max Fried,0.0029806612459519375
+SL,slider (SL),Two pitches ago: ST,0.002810049724891925
+SL,slider (SL),Pitcher: Nick Lodolo,0.0027143076702305863
+SL,slider (SL),Base state: ---,0.002564096175973923
+SL,slider (SL),Two pitches ago: FC,0.002500016272221257
+SL,slider (SL),Pitcher: Logan Allen,0.0024493477069800805
+SL,slider (SL),Pitcher: Jack Flaherty,0.002441136345017766
+SL,slider (SL),Pitcher: Logan Gilbert,0.002437827647478347
+SL,slider (SL),score diff batting team,0.002376780559136352
+SL,slider (SL),Pitcher: Andrew Abbott,0.0023491053861536366
+SL,slider (SL),Pitcher: Kyle Freeland,0.0022205103132695776
+SL,slider (SL),Two pitches ago: START,0.0021897181877677894
+SL,slider (SL),Pitcher: Erick Fedde,0.002161801039766838
+SL,slider (SL),Two pitches ago: FF,0.0021618004975427836
+SL,slider (SL),Pitcher: Zack Littell,0.00207454668797898
+SL,slider (SL),Pitcher: Framber Valdez,0.00202313302250734
+SL,slider (SL),Previous pitch: FF,0.0020165780638111332
+SL,slider (SL),Count: 0-0,0.001861197779257962
+SL,slider (SL),Pitcher: Bryce Elder,0.0017495123966195154
+SL,slider (SL),Pitcher: Drew Rasmussen,0.0017406567752576135
+SL,slider (SL),Two pitches ago: SI,0.0017365042347342804
+SL,slider (SL),Pitcher: Tomoyuki Sugano,0.0017152675555073193
+SL,slider (SL),Previous pitch: START,0.0017092666679210864
+SL,slider (SL),Two pitches ago: CH,0.0016989872448483453
+SL,slider (SL),Two pitches ago: FS,0.0016886520022855445
+SL,slider (SL),Pitcher: Jose Quintana,0.001662835278848974
+SL,slider (SL),Previous result: START,0.0016543583735242453
+SL,slider (SL),Previous pitch: FS,0.001642105578435085
+SL,slider (SL),Pitcher: Yoshinobu Yamamoto,0.001552749853972983
+SL,slider (SL),Previous pitch: CU,0.001433703567141477
+SL,slider (SL),Previous result: foul,0.0013772390548376656
+SL,slider (SL),Pitcher: MacKenzie Gore,0.001354764508663233
+SL,slider (SL),Pitcher: Quinn Priester,0.0013443518543835525
+SL,slider (SL),Two pitches ago: CU,0.0013422314777061573
+SL,slider (SL),Previous pitch: SI,0.0013107400371842987
+SL,slider (SL),Base state: -2-,0.0012987786929480965
+SL,slider (SL),Pitcher: Chris Paddack,0.0012413803946890593
+SL,slider (SL),Pitcher: Nick Pivetta,0.001224679616168014
+SL,slider (SL),Previous pitch: KC,0.0011835652933980657
+SL,slider (SL),Pitcher: Shota Imanaga,0.0011729317265082293
+SL,slider (SL),Count: 3-0,0.0011621568919705433
+SL,slider (SL),Pitcher: Ranger Suarez,0.0011356964850173237
+SL,slider (SL),Pitcher: Dustin May,0.0011317805606674454
+SL,slider (SL),Pitcher: Spencer Strider,0.0010864187089336189
+SL,slider (SL),Previous pitch: CH,0.0010816893407660998
+SL,slider (SL),Base state: 1--,0.0010698498707352884
+SL,slider (SL),Pitcher: Tyler Anderson,0.0010598687233983187
+SL,slider (SL),Pitcher: Taj Bradley,0.0010595951699598604
+SL,slider (SL),Pitcher: Brayan Bello,0.0010201223419507802
+SL,slider (SL),Pitcher: Eduardo Rodriguez,0.0009921104695347655
+SL,slider (SL),Pitcher: Robbie Ray,0.0009823728521514063
+SL,slider (SL),Count: 2-0,0.0009539348631642123
+SL,slider (SL),Pitcher: Jeffrey Springs,0.0009181049749332373
+SL,slider (SL),Pitcher: Lucas Giolito,0.0008509272763653649
+SL,slider (SL),Previous result: swinging_strike,0.0008240791625917618
+SL,slider (SL),Pitcher: Sonny Gray,0.0008038559457701376
+SL,slider (SL),Pitcher: José Soriano,0.0007153302701289998
+SL,slider (SL),Count: 0-2,0.0007149582113480652
+SL,slider (SL),Previous result: ball,0.000704384199234199
+SL,slider (SL),Count: 0-1,0.0007035695055537799
+SL,slider (SL),Count: 1-2,0.0006306831402765147
+SL,slider (SL),Base state: --3,0.0006052370824522422
+SL,slider (SL),Pitcher: Andre Pallante,0.0005764910326768875
+SL,slider (SL),Pitcher: Davis Martin,0.0005735109130304469
+SL,slider (SL),Count: 1-1,0.0005627211948009673
+SL,slider (SL),Pitcher: Randy Vásquez,0.000555895639612112
+SL,slider (SL),Pitcher: Miles Mikolas,0.0005555415600404201
+SL,slider (SL),Pitcher: Chris Bassitt,0.0004946454929369794
+SL,slider (SL),Count: 3-1,0.00047970323070035416
+SL,slider (SL),Pitcher: Hunter Brown,0.0004644981806837861
+SL,slider (SL),Pitcher: Freddy Peralta,0.0004477019296894938
+SL,slider (SL),Previous result: called_strike,0.0004313983136229168
+SL,slider (SL),Pitcher: Jake Irvin,0.00041935243146961113
+SL,slider (SL),Count: 3-2,0.000412537287424469
+SL,slider (SL),Pitcher: Mitchell Parker,0.0004034351046854683
+SL,slider (SL),Pitcher: Jack Leiter,0.00039120752965870044
+SL,slider (SL),Pitcher: Merrill Kelly,0.00033779004495473815
+SL,slider (SL),Pitcher: Luis Castillo,0.0003186409494331915
+SL,slider (SL),Pitcher: David Peterson,0.0003095100405896151
+SL,slider (SL),Pitcher: Shane Baz,0.0003029912539181281
+SL,slider (SL),Count: 2-2,0.0002913535483683512
+SL,slider (SL),Pitcher: Jesús Luzardo,0.0002610743268229547
+SL,slider (SL),Pitcher: Matthew Liberatore,0.0002607013348415352
+SL,slider (SL),Count: 2-1,0.0002435834207315426
+SL,slider (SL),Pitcher: Brad Lord,0.00024312498222552433
+SL,slider (SL),Base state: 12-,0.0002413041933994248
+SL,slider (SL),Base state: -23,0.0002171488899713845
+SL,slider (SL),Count: 1-0,0.00021693683355451665
+SL,slider (SL),Previous result: blocked_ball,0.00021673943763793617
+SL,slider (SL),Pitcher: Cristopher Sánchez,0.0002100763172327167
+SL,slider (SL),Pitcher: Seth Lugo,0.0002086229610200995
+SL,slider (SL),Pitcher: Sean Burke,0.0001997917504183875
+SL,slider (SL),Pitcher: JP Sears,0.00019815069118772643
+SL,slider (SL),Pitcher: Paul Skenes,0.0001895900021208662
+SL,slider (SL),Base state: 1-3,0.00015824978104278
+SL,slider (SL),Pitcher: Luis Severino,0.00014970958200955843
+SL,slider (SL),Pitcher: Shane Smith,0.00012606877897145606
+SL,slider (SL),Pitcher: Bryan Woo,0.00012401827987242164
+SL,slider (SL),Two pitches ago: KC,0.00010531830909285531
+SL,slider (SL),Pitcher: Kevin Gausman,9.63950739352087e-05
+SL,slider (SL),Pitcher: Slade Cecconi,9.444066268069313e-05
+SL,slider (SL),Pitcher: Ryne Nelson,8.105860560171962e-05
+SL,slider (SL),Pitcher: Walker Buehler,7.488252302382577e-05
+SL,slider (SL),Pitcher: Cal Quantrill,7.230641597308281e-05
+SL,slider (SL),Pitcher: Colin Rea,7.159622716820776e-05
+SL,slider (SL),Pitcher: Justin Verlander,6.76381446581637e-05
+SL,slider (SL),Pitcher: Mitch Keller,5.938921545571389e-05
+SL,slider (SL),Pitcher: Zac Gallen,5.479610726501571e-05
+SL,slider (SL),Pitcher: Sandy Alcantara,5.281584492565407e-05
+SL,slider (SL),Pitcher: Matthew Boyd,5.053552380293914e-05
+SL,slider (SL),Pitcher: Antonio Senzatela,3.831499745484572e-05
+SL,slider (SL),Pitcher: Andrew Heaney,3.587864718294349e-05
+SL,slider (SL),Pitcher: Nick Martinez,3.44252156541207e-05
+SL,slider (SL),Pitcher: Casey Mize,2.889553640113552e-05
+SL,slider (SL),Pitcher: Tarik Skubal,2.732819085707139e-05
+SL,slider (SL),Pitcher: Taijuan Walker,2.6975039430491734e-05
+SL,slider (SL),Pitcher: Joe Ryan,2.495732737853232e-05
+SL,slider (SL),Pitcher: Edward Cabrera,2.4809770826562003e-05
+SL,slider (SL),Base state: 123,1.607114791744256e-05
+SL,slider (SL),Pitcher: Noah Cameron,1.516395620687604e-05
+SL,slider (SL),Pitcher: Michael Wacha,1.4948501074217744e-05
+SL,slider (SL),Pitcher: Ryan Pepiot,7.732237199241497e-06
+SL,slider (SL),Pitcher: Clay Holmes,7.356517784201182e-06
+SL,slider (SL),Pitcher: Michael Lorenzen,0.0
+SL,slider (SL),Pitcher: Bailey Ober,0.0
+SL,slider (SL),Previous result: foul_bunt,0.0
+SL,slider (SL),Previous pitch: SV,0.0
+SL,slider (SL),Previous result: foul_tip,0.0
+SL,slider (SL),Pitcher: Germán Márquez,0.0
+SL,slider (SL),Two pitches ago: infrequent_sklearn,0.0
+SL,slider (SL),Previous result: infrequent_sklearn,0.0
+SL,slider (SL),Previous result: swinging_strike_blocked,0.0
+SL,slider (SL),Previous pitch: infrequent_sklearn,0.0

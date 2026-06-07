@@ -1,0 +1,59 @@
+{
+  "n_2025_rows": 261620,
+  "n_2026_rows": 82282,
+  "target_pitches": [
+    "FF",
+    "SI",
+    "CH",
+    "SL",
+    "CU"
+  ],
+  "best_state_machine": {
+    "model": "state:pitcher_count_prev_stand:arsenal_masked",
+    "dataset": "2025_holdout",
+    "rows": 52324,
+    "exact_accuracy": 0.4229225594373519,
+    "top2_accuracy": 0.6816948245546977,
+    "top3_accuracy": 0.8422903447748643,
+    "macro_f1": 0.2581001102517743,
+    "avg_probability_actual_pitch": 0.30607133387254826,
+    "avg_model_confidence": 0.4248730191159457,
+    "log_loss": 1.426194359530992,
+    "alpha": 1.0,
+    "min_count": 5,
+    "state_spec": "pitcher_count_prev_stand",
+    "arsenal_masked": true
+  },
+  "best_pooled_model": {
+    "model": "pooled_hgb_tuned_4_arsenal_masked",
+    "dataset": "2025_holdout",
+    "rows": 52324,
+    "exact_accuracy": 0.4329561960094794,
+    "top2_accuracy": 0.6982073235991132,
+    "top3_accuracy": 0.8547893891904289,
+    "macro_f1": 0.2797393038442274,
+    "avg_probability_actual_pitch": 0.3195193157128004,
+    "avg_model_confidence": 0.4399080624556045,
+    "log_loss": 1.394353708504488,
+    "learning_rate": 0.08,
+    "max_iter": 160,
+    "max_leaf_nodes": 31,
+    "l2_regularization": 0.05
+  },
+  "best_2026_temporal_model": {
+    "model": "pooled_hgb_tuned_4_arsenal_masked",
+    "dataset": "2026_to_date",
+    "rows": 82282,
+    "exact_accuracy": 0.3905106827738752,
+    "top2_accuracy": 0.6422425317809485,
+    "top3_accuracy": 0.8014632604943973,
+    "macro_f1": 0.2280778867829888,
+    "avg_probability_actual_pitch": 0.2950772902834438,
+    "avg_model_confidence": 0.4352485030510212,
+    "log_loss": 2.4681689862531124,
+    "learning_rate": 0.08,
+    "max_iter": 160,
+    "max_leaf_nodes": 31,
+    "l2_regularization": 0.05
+  }
+}

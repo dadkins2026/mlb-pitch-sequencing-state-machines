@@ -1,0 +1,49 @@
+dataset,mix_type,pitch_type,pitch_label,share
+2025_holdout,Actual,FF,4-seam fastball (FF),0.3192034248146166
+2025_holdout,Actual,SI,sinker (SI),0.15811100068802078
+2025_holdout,Actual,CH,changeup (CH),0.1189893739010779
+2025_holdout,Actual,SL,slider (SL),0.11736488036082868
+2025_holdout,Actual,CU,curveball (CU),0.0804028743979818
+2025_holdout,Actual,FC,cutter (FC),0.07711566394006575
+2025_holdout,Actual,ST,sweeper (ST),0.0636992584664781
+2025_holdout,Actual,FS,splitter (FS),0.03277654613561654
+2025_holdout,Actual,KC,knuckle curve (KC),0.025724333002064063
+2025_holdout,Actual,SV,slurve (SV),0.005332161149759193
+2025_holdout,Actual,CS,CS (CS),0.0011849246999464872
+2025_holdout,Actual,PO,PO (PO),7.644675483525724e-05
+2025_holdout,Actual,UN,UN (UN),1.911168870881431e-05
+2025_holdout,Predicted,FF,4-seam fastball (FF),0.509880743062457
+2025_holdout,Predicted,SI,sinker (SI),0.18427490253038759
+2025_holdout,Predicted,CH,changeup (CH),0.07497515480467855
+2025_holdout,Predicted,SL,slider (SL),0.06666157021634432
+2025_holdout,Predicted,ST,sweeper (ST),0.0430012995948322
+2025_holdout,Predicted,FC,cutter (FC),0.03864383456922254
+2025_holdout,Predicted,FS,splitter (FS),0.03157250974696124
+2025_holdout,Predicted,CU,curveball (CU),0.030999159085696813
+2025_holdout,Predicted,KC,knuckle curve (KC),0.014639553550951761
+2025_holdout,Predicted,SV,slurve (SV),0.004548581912697806
+2025_holdout,Predicted,CS,CS (CS),0.0008026909257702011
+2026_to_date,Actual,FF,4-seam fastball (FF),0.2982669356602902
+2026_to_date,Actual,SI,sinker (SI),0.16129894752193674
+2026_to_date,Actual,CH,changeup (CH),0.11917551833936949
+2026_to_date,Actual,SL,slider (SL),0.11085048977905253
+2026_to_date,Actual,FC,cutter (FC),0.09260834690454778
+2026_to_date,Actual,CU,curveball (CU),0.07655380277581975
+2026_to_date,Actual,ST,sweeper (ST),0.06747526798084635
+2026_to_date,Actual,FS,splitter (FS),0.0407501033032741
+2026_to_date,Actual,KC,knuckle curve (KC),0.030273935976276707
+2026_to_date,Actual,SV,slurve (SV),0.0020417588293916043
+2026_to_date,Actual,CS,CS (CS),0.0005955129919058847
+2026_to_date,Actual,PO,PO (PO),9.722661092340974e-05
+2026_to_date,Actual,UN,UN (UN),1.2153326365426218e-05
+2026_to_date,Predicted,FF,4-seam fastball (FF),0.5152402712622445
+2026_to_date,Predicted,SI,sinker (SI),0.1744366933229625
+2026_to_date,Predicted,CH,changeup (CH),0.07126710580685934
+2026_to_date,Predicted,SL,slider (SL),0.06943195352567998
+2026_to_date,Predicted,ST,sweeper (ST),0.04595172698767653
+2026_to_date,Predicted,FC,cutter (FC),0.04078656328237038
+2026_to_date,Predicted,FS,splitter (FS),0.03331226756763326
+2026_to_date,Predicted,CU,curveball (CU),0.031124668821856542
+2026_to_date,Predicted,KC,knuckle curve (KC),0.01526457791497533
+2026_to_date,Predicted,SV,slurve (SV),0.0025521985367395056
+2026_to_date,Predicted,CS,CS (CS),0.0006319729710021633

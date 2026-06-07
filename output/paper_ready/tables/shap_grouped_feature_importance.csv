@@ -1,0 +1,41 @@
+target_pitch_type,target_pitch_label,feature_group,mean_abs_shap,raw_features
+CH,changeup (CH),Pitcher identity / arsenal,0.05746245234863272,100
+CH,changeup (CH),Previous pitch type,0.0515019187743355,12
+CH,changeup (CH),Count / ball-strike leverage,0.0366154531971547,14
+CH,changeup (CH),Two-pitches-ago pitch type,0.0256486327238781,11
+CH,changeup (CH),prev release speed,0.0234688215719954,1
+CH,changeup (CH),Previous pitch result,0.016657303254609127,10
+CH,changeup (CH),Batter handedness,0.012097281078291201,2
+CH,changeup (CH),pitch number,0.0063529996721491,1
+CH,changeup (CH),Base/out state,0.0032822401078278565,8
+CH,changeup (CH),score diff batting team,0.0017715932794124,1
+FF,4-seam fastball (FF),Pitcher identity / arsenal,0.06445116695916467,100
+FF,4-seam fastball (FF),Previous pitch type,0.05750257933273222,12
+FF,4-seam fastball (FF),Two-pitches-ago pitch type,0.023740930360666008,11
+FF,4-seam fastball (FF),Count / ball-strike leverage,0.0217712881329931,14
+FF,4-seam fastball (FF),Batter handedness,0.008384934716171001,2
+FF,4-seam fastball (FF),Base/out state,0.008062612571409408,8
+FF,4-seam fastball (FF),Previous pitch result,0.005415426598147383,10
+FF,4-seam fastball (FF),prev release speed,0.0049840570273013,1
+FF,4-seam fastball (FF),score diff batting team,0.0033651610245523,1
+FF,4-seam fastball (FF),pitch number,0.0020984021828415,1
+SI,sinker (SI),Previous pitch type,0.07548776582862174,12
+SI,sinker (SI),Count / ball-strike leverage,0.04940779644903855,14
+SI,sinker (SI),Pitcher identity / arsenal,0.03692094445413487,100
+SI,sinker (SI),Two-pitches-ago pitch type,0.035699643742612745,11
+SI,sinker (SI),Batter handedness,0.028280206383396598,2
+SI,sinker (SI),Previous pitch result,0.01669869546946646,10
+SI,sinker (SI),prev release speed,0.0070520593996117,1
+SI,sinker (SI),pitch number,0.0058692339940953,1
+SI,sinker (SI),Base/out state,0.004108924012359401,8
+SI,sinker (SI),score diff batting team,0.0016181650693181,1
+SL,slider (SL),Pitcher identity / arsenal,0.13063737736053446,100
+SL,slider (SL),Previous pitch type,0.0608261563832396,12
+SL,slider (SL),Two-pitches-ago pitch type,0.0359505616723084,11
+SL,slider (SL),Batter handedness,0.0246295829723721,2
+SL,slider (SL),Count / ball-strike leverage,0.0175253383170757,14
+SL,slider (SL),prev release speed,0.0150296567636785,1
+SL,slider (SL),Base/out state,0.006170735834440143,8
+SL,slider (SL),Previous pitch result,0.0052081985414484,10
+SL,slider (SL),pitch number,0.0032808924619447,1
+SL,slider (SL),score diff batting team,0.0023767805591363,1

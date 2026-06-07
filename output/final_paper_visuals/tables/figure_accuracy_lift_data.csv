@@ -1,0 +1,10 @@
+dataset,stage,exact_accuracy
+2025_holdout,Dummy baseline,0.3192034248146166
+2025_holdout,State machine,0.422923
+2025_holdout,Current HGB,0.432956
+2025_holdout,Current-game HGB,0.435689
+2025_holdout,Stacked model,0.441404
+2026_to_date,State machine,0.374104
+2026_to_date,Current HGB,0.390511
+2026_to_date,Current-game HGB,0.397353
+2026_to_date,Stacked model,0.403855

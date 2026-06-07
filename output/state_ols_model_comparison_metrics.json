@@ -1,0 +1,134 @@
+[
+  {
+    "model": "per_pitcher_hist_gradient_boosting_fallback",
+    "dataset": "2025_holdout",
+    "rows": 52324,
+    "accuracy": 0.4251395153275743,
+    "top2_accuracy": 0.6906582065591316,
+    "top3_accuracy": 0.8561845424661723,
+    "macro_f1": 0.2794191648166542,
+    "avg_actual_probability": 0.33659083309521787,
+    "avg_confidence": 0.49199259166282355
+  },
+  {
+    "model": "per_pitcher_hist_gradient_boosting_fallback_arsenal_masked",
+    "dataset": "2025_holdout",
+    "rows": 52324,
+    "accuracy": 0.4251968503937008,
+    "top2_accuracy": 0.6908111000688021,
+    "top3_accuracy": 0.8561463190887547,
+    "macro_f1": 0.2794208235393087,
+    "avg_actual_probability": 0.3368005877063571,
+    "avg_confidence": 0.4922948179069776
+  },
+  {
+    "model": "state_machine_lookup",
+    "dataset": "2025_holdout",
+    "rows": 52324,
+    "accuracy": 0.3780865377264735,
+    "top2_accuracy": 0.5695665469000841,
+    "top3_accuracy": 0.6665583670973168,
+    "macro_f1": 0.24877299115593204,
+    "avg_actual_probability": 0.17677185003806242,
+    "avg_confidence": 0.24949458550360065
+  },
+  {
+    "model": "state_machine_lookup_arsenal_masked",
+    "dataset": "2025_holdout",
+    "rows": 52324,
+    "accuracy": 0.37816298448130875,
+    "top2_accuracy": 0.6116313737481844,
+    "top3_accuracy": 0.771309532910328,
+    "macro_f1": 0.2488330088890234,
+    "avg_actual_probability": 0.2673531666580022,
+    "avg_confidence": 0.3790029556761476
+  },
+  {
+    "model": "pooled_hist_gradient_boosting_fallback",
+    "dataset": "2025_holdout",
+    "rows": 52324,
+    "accuracy": 0.4075567617154652,
+    "top2_accuracy": 0.668488647656907,
+    "top3_accuracy": 0.8268481002981424,
+    "macro_f1": 0.2375778351212089,
+    "avg_actual_probability": 0.26520470971811644,
+    "avg_confidence": 0.37157479601342774
+  },
+  {
+    "model": "pooled_hist_gradient_boosting_fallback_arsenal_masked",
+    "dataset": "2025_holdout",
+    "rows": 52324,
+    "accuracy": 0.40769054353642686,
+    "top2_accuracy": 0.6694251204036389,
+    "top3_accuracy": 0.8326007185994955,
+    "macro_f1": 0.23764776112153224,
+    "avg_actual_probability": 0.2935186680182707,
+    "avg_confidence": 0.41062796445893734
+  },
+  {
+    "model": "per_pitcher_hist_gradient_boosting_fallback",
+    "dataset": "2026_to_date",
+    "rows": 82282,
+    "accuracy": 0.3634209183053402,
+    "top2_accuracy": 0.6114824627500547,
+    "top3_accuracy": 0.7809119856104616,
+    "macro_f1": 0.22812687383503755,
+    "avg_actual_probability": 0.29869344557955096,
+    "avg_confidence": 0.48910020360418655
+  },
+  {
+    "model": "per_pitcher_hist_gradient_boosting_fallback_arsenal_masked",
+    "dataset": "2026_to_date",
+    "rows": 82282,
+    "accuracy": 0.36345737828443647,
+    "top2_accuracy": 0.6114824627500547,
+    "top3_accuracy": 0.780924138936827,
+    "macro_f1": 0.22813801804743614,
+    "avg_actual_probability": 0.29890765302342626,
+    "avg_confidence": 0.48959533060033683
+  },
+  {
+    "model": "state_machine_lookup",
+    "dataset": "2026_to_date",
+    "rows": 82282,
+    "accuracy": 0.3577817748717824,
+    "top2_accuracy": 0.5756058433193165,
+    "top3_accuracy": 0.7007729515568412,
+    "macro_f1": 0.22396881953644274,
+    "avg_actual_probability": 0.19914222941408385,
+    "avg_confidence": 0.2974377170887011
+  },
+  {
+    "model": "state_machine_lookup_arsenal_masked",
+    "dataset": "2026_to_date",
+    "rows": 82282,
+    "accuracy": 0.35784254150360956,
+    "top2_accuracy": 0.5929607933691451,
+    "top3_accuracy": 0.7530322549281738,
+    "macro_f1": 0.22403799129225593,
+    "avg_actual_probability": 0.26497291259171946,
+    "avg_confidence": 0.39791583153423465
+  },
+  {
+    "model": "pooled_hist_gradient_boosting_fallback",
+    "dataset": "2026_to_date",
+    "rows": 82282,
+    "accuracy": 0.3705549208818454,
+    "top2_accuracy": 0.620986363967818,
+    "top3_accuracy": 0.7808755256313653,
+    "macro_f1": 0.19641358664958053,
+    "avg_actual_probability": 0.24898159555259194,
+    "avg_confidence": 0.3661883846343057
+  },
+  {
+    "model": "pooled_hist_gradient_boosting_fallback_arsenal_masked",
+    "dataset": "2026_to_date",
+    "rows": 82282,
+    "accuracy": 0.3705670742082108,
+    "top2_accuracy": 0.6214238837169733,
+    "top3_accuracy": 0.7848739700055906,
+    "macro_f1": 0.1964183934805973,
+    "avg_actual_probability": 0.27437659127442643,
+    "avg_confidence": 0.4062464583058681
+  }
+]

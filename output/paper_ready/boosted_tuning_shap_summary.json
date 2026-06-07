@@ -1,0 +1,392 @@
+{
+  "top_n": 100,
+  "n_2025_rows": 261620,
+  "n_2026_rows": 82282,
+  "previous_best_pooled_model": {
+    "model": "pooled_hgb_tuned_2_arsenal_masked",
+    "dataset": "2025_holdout",
+    "rows": 52324,
+    "exact_accuracy": 0.4288662946257931,
+    "top2_accuracy": 0.6943276507912239,
+    "top3_accuracy": 0.851999082638942,
+    "macro_f1": 0.2664901838927646,
+    "avg_probability_actual_pitch": 0.3138070332718945,
+    "avg_model_confidence": 0.4320167345597788,
+    "log_loss": 1.4043274819869176,
+    "learning_rate": 0.07,
+    "max_iter": 100,
+    "max_leaf_nodes": 31,
+    "l2_regularization": 0.02
+  },
+  "previous_best_2026_temporal_model": {
+    "model": "pooled_hgb_tuned_2_arsenal_masked",
+    "dataset": "2026_to_date",
+    "rows": 82282,
+    "exact_accuracy": 0.3876060377725383,
+    "top2_accuracy": 0.6412459590189835,
+    "top3_accuracy": 0.799287815074986,
+    "macro_f1": 0.2319036344939023,
+    "avg_probability_actual_pitch": 0.29060152150666635,
+    "avg_model_confidence": 0.426387807493858,
+    "log_loss": 2.469631868298269,
+    "learning_rate": 0.07,
+    "max_iter": 100,
+    "max_leaf_nodes": 31,
+    "l2_regularization": 0.02
+  },
+  "new_best_2025_boosted_model": {
+    "model": "pooled_hgb_tuned_4_arsenal_masked",
+    "dataset": "2025_holdout",
+    "rows": 52324,
+    "exact_accuracy": 0.4329561960094794,
+    "top2_accuracy": 0.6982073235991132,
+    "top3_accuracy": 0.8547893891904289,
+    "macro_f1": 0.2797393038442274,
+    "avg_probability_actual_pitch": 0.3195193157128004,
+    "avg_model_confidence": 0.4399080624556045,
+    "log_loss": 1.3943537085044881,
+    "learning_rate": 0.08,
+    "max_iter": 160,
+    "max_leaf_nodes": 31,
+    "l2_regularization": 0.05
+  },
+  "new_best_2026_boosted_model": {
+    "model": "pooled_hgb_tuned_4_arsenal_masked",
+    "dataset": "2026_to_date",
+    "rows": 82282,
+    "exact_accuracy": 0.3905106827738752,
+    "top2_accuracy": 0.6422425317809485,
+    "top3_accuracy": 0.8014632604943973,
+    "macro_f1": 0.22807788678298888,
+    "avg_probability_actual_pitch": 0.29507729028344387,
+    "avg_model_confidence": 0.43524850305102125,
+    "log_loss": 2.4681689862531124,
+    "learning_rate": 0.08,
+    "max_iter": 160,
+    "max_leaf_nodes": 31,
+    "l2_regularization": 0.05
+  },
+  "top_global_shap_features": [
+    {
+      "feature": "Previous pitch: FF",
+      "mean_abs_shap": 0.0155819450147381,
+      "pitch_types": 4
+    },
+    {
+      "feature": "prev release speed",
+      "mean_abs_shap": 0.0126336486906467,
+      "pitch_types": 4
+    },
+    {
+      "feature": "Previous pitch: SI",
+      "mean_abs_shap": 0.0125422892893671,
+      "pitch_types": 4
+    },
+    {
+      "feature": "Previous pitch: SL",
+      "mean_abs_shap": 0.0104416534565682,
+      "pitch_types": 4
+    },
+    {
+      "feature": "Batter side: L",
+      "mean_abs_shap": 0.0098121634350095,
+      "pitch_types": 4
+    },
+    {
+      "feature": "strikes",
+      "mean_abs_shap": 0.008557213491712,
+      "pitch_types": 4
+    },
+    {
+      "feature": "Batter side: R",
+      "mean_abs_shap": 0.0085358378525482,
+      "pitch_types": 4
+    },
+    {
+      "feature": "Two pitches ago: SI",
+      "mean_abs_shap": 0.0079924782345396,
+      "pitch_types": 4
+    },
+    {
+      "feature": "Previous pitch: CH",
+      "mean_abs_shap": 0.0074979929477497,
+      "pitch_types": 4
+    },
+    {
+      "feature": "balls",
+      "mean_abs_shap": 0.0073622072034149,
+      "pitch_types": 4
+    },
+    {
+      "feature": "Two pitches ago: FF",
+      "mean_abs_shap": 0.006551162039755,
+      "pitch_types": 4
+    },
+    {
+      "feature": "Two pitches ago: SL",
+      "mean_abs_shap": 0.0053170410580935,
+      "pitch_types": 4
+    },
+    {
+      "feature": "Previous result: START",
+      "mean_abs_shap": 0.0051358740644269,
+      "pitch_types": 4
+    },
+    {
+      "feature": "pitch number",
+      "mean_abs_shap": 0.0044003820777576,
+      "pitch_types": 4
+    },
+    {
+      "feature": "Two pitches ago: CH",
+      "mean_abs_shap": 0.0043617551608848,
+      "pitch_types": 4
+    }
+  ],
+  "top_pitch_type_shap_features": [
+    {
+      "target_pitch_type": "FF",
+      "target_pitch_label": "4-seam fastball (FF)",
+      "feature": "Previous pitch: SI",
+      "mean_abs_shap": 0.023922374487942436
+    },
+    {
+      "target_pitch_type": "FF",
+      "target_pitch_label": "4-seam fastball (FF)",
+      "feature": "Previous pitch: FF",
+      "mean_abs_shap": 0.02069787580656593
+    },
+    {
+      "target_pitch_type": "FF",
+      "target_pitch_label": "4-seam fastball (FF)",
+      "feature": "Two pitches ago: SI",
+      "mean_abs_shap": 0.013456296761472806
+    },
+    {
+      "target_pitch_type": "FF",
+      "target_pitch_label": "4-seam fastball (FF)",
+      "feature": "Previous pitch: FC",
+      "mean_abs_shap": 0.007809769768508302
+    },
+    {
+      "target_pitch_type": "FF",
+      "target_pitch_label": "4-seam fastball (FF)",
+      "feature": "Pitcher: Cristopher S\u00e1nchez",
+      "mean_abs_shap": 0.006691155414221287
+    },
+    {
+      "target_pitch_type": "FF",
+      "target_pitch_label": "4-seam fastball (FF)",
+      "feature": "balls",
+      "mean_abs_shap": 0.006592416577580357
+    },
+    {
+      "target_pitch_type": "FF",
+      "target_pitch_label": "4-seam fastball (FF)",
+      "feature": "Two pitches ago: FF",
+      "mean_abs_shap": 0.00656089501812086
+    },
+    {
+      "target_pitch_type": "FF",
+      "target_pitch_label": "4-seam fastball (FF)",
+      "feature": "Base state: ---",
+      "mean_abs_shap": 0.0054509670038423805
+    },
+    {
+      "target_pitch_type": "SI",
+      "target_pitch_label": "sinker (SI)",
+      "feature": "Previous pitch: FF",
+      "mean_abs_shap": 0.03637494768316849
+    },
+    {
+      "target_pitch_type": "SI",
+      "target_pitch_label": "sinker (SI)",
+      "feature": "Previous pitch: SI",
+      "mean_abs_shap": 0.02379440033154501
+    },
+    {
+      "target_pitch_type": "SI",
+      "target_pitch_label": "sinker (SI)",
+      "feature": "Two pitches ago: FF",
+      "mean_abs_shap": 0.01667476708988472
+    },
+    {
+      "target_pitch_type": "SI",
+      "target_pitch_label": "sinker (SI)",
+      "feature": "Batter side: L",
+      "mean_abs_shap": 0.016191151921558258
+    },
+    {
+      "target_pitch_type": "SI",
+      "target_pitch_label": "sinker (SI)",
+      "feature": "strikes",
+      "mean_abs_shap": 0.015610587021682627
+    },
+    {
+      "target_pitch_type": "SI",
+      "target_pitch_label": "sinker (SI)",
+      "feature": "Two pitches ago: SI",
+      "mean_abs_shap": 0.014990289739925486
+    },
+    {
+      "target_pitch_type": "SI",
+      "target_pitch_label": "sinker (SI)",
+      "feature": "Batter side: R",
+      "mean_abs_shap": 0.012089054461838446
+    },
+    {
+      "target_pitch_type": "SI",
+      "target_pitch_label": "sinker (SI)",
+      "feature": "Count: 0-2",
+      "mean_abs_shap": 0.008381702848434367
+    },
+    {
+      "target_pitch_type": "CH",
+      "target_pitch_label": "changeup (CH)",
+      "feature": "Previous pitch: CH",
+      "mean_abs_shap": 0.024309562822744536
+    },
+    {
+      "target_pitch_type": "CH",
+      "target_pitch_label": "changeup (CH)",
+      "feature": "prev release speed",
+      "mean_abs_shap": 0.02346882157199541
+    },
+    {
+      "target_pitch_type": "CH",
+      "target_pitch_label": "changeup (CH)",
+      "feature": "Two pitches ago: CH",
+      "mean_abs_shap": 0.014918517562567329
+    },
+    {
+      "target_pitch_type": "CH",
+      "target_pitch_label": "changeup (CH)",
+      "feature": "Previous result: START",
+      "mean_abs_shap": 0.011266989189285738
+    },
+    {
+      "target_pitch_type": "CH",
+      "target_pitch_label": "changeup (CH)",
+      "feature": "strikes",
+      "mean_abs_shap": 0.010204799118457541
+    },
+    {
+      "target_pitch_type": "CH",
+      "target_pitch_label": "changeup (CH)",
+      "feature": "Previous pitch: START",
+      "mean_abs_shap": 0.0093075649553419
+    },
+    {
+      "target_pitch_type": "CH",
+      "target_pitch_label": "changeup (CH)",
+      "feature": "balls",
+      "mean_abs_shap": 0.009207224000226156
+    },
+    {
+      "target_pitch_type": "CH",
+      "target_pitch_label": "changeup (CH)",
+      "feature": "Batter side: L",
+      "mean_abs_shap": 0.0066805251440099555
+    },
+    {
+      "target_pitch_type": "SL",
+      "target_pitch_label": "slider (SL)",
+      "feature": "Previous pitch: SL",
+      "mean_abs_shap": 0.03830049014421012
+    },
+    {
+      "target_pitch_type": "SL",
+      "target_pitch_label": "slider (SL)",
+      "feature": "Two pitches ago: SL",
+      "mean_abs_shap": 0.01971728372121809
+    },
+    {
+      "target_pitch_type": "SL",
+      "target_pitch_label": "slider (SL)",
+      "feature": "prev release speed",
+      "mean_abs_shap": 0.015029656763678593
+    },
+    {
+      "target_pitch_type": "SL",
+      "target_pitch_label": "slider (SL)",
+      "feature": "Batter side: L",
+      "mean_abs_shap": 0.01246347148964876
+    },
+    {
+      "target_pitch_type": "SL",
+      "target_pitch_label": "slider (SL)",
+      "feature": "Batter side: R",
+      "mean_abs_shap": 0.012166111482723478
+    },
+    {
+      "target_pitch_type": "SL",
+      "target_pitch_label": "slider (SL)",
+      "feature": "Pitcher: Garrett Crochet",
+      "mean_abs_shap": 0.008290857986817257
+    },
+    {
+      "target_pitch_type": "SL",
+      "target_pitch_label": "slider (SL)",
+      "feature": "Previous pitch: ST",
+      "mean_abs_shap": 0.007525191469935574
+    },
+    {
+      "target_pitch_type": "SL",
+      "target_pitch_label": "slider (SL)",
+      "feature": "Pitcher: Patrick Corbin",
+      "mean_abs_shap": 0.005891014824155378
+    }
+  ],
+  "top_grouped_shap_features": [
+    {
+      "feature_group": "Pitcher identity / arsenal",
+      "mean_abs_shap": 0.0723679852806166,
+      "pitch_types": 4
+    },
+    {
+      "feature_group": "Previous pitch type",
+      "mean_abs_shap": 0.0613296050797322,
+      "pitch_types": 4
+    },
+    {
+      "feature_group": "Count / ball-strike leverage",
+      "mean_abs_shap": 0.0313299690240655,
+      "pitch_types": 4
+    },
+    {
+      "feature_group": "Two-pitches-ago pitch type",
+      "mean_abs_shap": 0.0302599421248663,
+      "pitch_types": 4
+    },
+    {
+      "feature_group": "Batter handedness",
+      "mean_abs_shap": 0.0183480012875577,
+      "pitch_types": 4
+    },
+    {
+      "feature_group": "prev release speed",
+      "mean_abs_shap": 0.0126336486906467,
+      "pitch_types": 4
+    },
+    {
+      "feature_group": "Previous pitch result",
+      "mean_abs_shap": 0.0109949059659178,
+      "pitch_types": 4
+    },
+    {
+      "feature_group": "Base/out state",
+      "mean_abs_shap": 0.0054061281315092,
+      "pitch_types": 4
+    },
+    {
+      "feature_group": "pitch number",
+      "mean_abs_shap": 0.0044003820777576,
+      "pitch_types": 4
+    },
+    {
+      "feature_group": "score diff batting team",
+      "mean_abs_shap": 0.0022829249831047,
+      "pitch_types": 4
+    }
+  ]
+}

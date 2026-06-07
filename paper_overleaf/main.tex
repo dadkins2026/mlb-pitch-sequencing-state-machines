@@ -1,0 +1,225 @@
+\documentclass[9pt,twoside]{pnas-new}
+% Paste this file into the PNAS single-column mathematics article template on Overleaf.
+% Upload the local paper_overleaf/figures folder as figures/ in the Overleaf project.
+% The PNAS template support files should remain in the Overleaf project.
+
+\articletype{Research Article}
+\templatetype{pnasmathematics}
+
+\begin{document}
+
+\title{Pitcher-specific state machines predict Major League Baseball pitch selection}
+
+\author[a,1]{David Adkins}
+
+\affil[a]{Department of [Department Name], [University Name], [City], [State ZIP]}
+
+\leadauthor{Adkins}
+
+\significancestatement{Baseball pitch selection is a compact example of strategic sequential decision-making. A pitcher repeatedly chooses among a small set of actions while accounting for count, batter handedness, previous pitches, game context, and personal repertoire. This project models that process for 100 Major League Baseball pitchers using interpretable state machines, ordinary least squares regressions, gradient-boosted classifiers, XGBoost, SHAP explanations, and a stacked ensemble. The results show that simple context-dependent state probabilities explain a substantial share of pitch choice, while boosted models add predictive accuracy by learning nonlinear interactions among pitcher identity, current-game behavior, recent-start tendencies, and batter matchup history.}
+
+\authorcontributions{D.A. designed the study, assembled the data pipeline, implemented the statistical models, generated the visualizations, and wrote the manuscript.}
+\authordeclaration{The author declares no competing interests.}
+\equalauthors{}
+\correspondingauthor{\textsuperscript{1}To whom correspondence should be addressed. E-mail: [your-email@example.com]}
+\keywords{baseball analytics $|$ state machines $|$ gradient boosting $|$ SHAP $|$ pitch sequencing}
+
+\begin{abstract}
+Pitch selection in baseball is observable at high frequency but only partly predictable. Each pitch is chosen from a pitcher-specific arsenal under changing count, batter, and game conditions. This project asks whether the next pitch thrown by Major League Baseball pitchers can be modeled as a probabilistic state process and whether modern machine-learning models add reliable accuracy beyond that state structure. Using Statcast pitch-level data for the top 100 pitchers by 2025 pitch volume, I construct sequence features for 261,620 pitches from March 18 through September 28, 2025, and evaluate temporal generalization on 82,282 pitches from the same pitcher pool observed from March 25 through June 4, 2026. A smoothed pitcher-count-previous-pitch-batter-side state machine attains 42.3\% exact accuracy and 84.2\% top-three accuracy on a held-out 2025 split. A recency-weighted stacked model combining histogram gradient boosting, XGBoost, and state-machine probabilities improves exact accuracy to 44.1\% on the 2025 holdout and 40.4\% on the 2026 validation set. OLS coefficient surfaces and grouped SHAP explanations show that pitcher arsenal, previous pitch type, count leverage, batter handedness, and recent usage history are the main information sources. The results support a conservative conclusion: pitch choice is not deterministic, but it is structured enough for interpretable state models and boosted classifiers to recover meaningful strategic regularities.
+\end{abstract}
+
+\dates{This manuscript was compiled on \today}
+\doi{\url{www.pnas.org/cgi/doi/10.1073/pnas.XXXXXXXXXX}}
+
+\maketitle
+\thispagestyle{firststyle}
+\ifthenelse{\boolean{shortarticle}}{\ifthenelse{\boolean{singlecolumn}}{\abscontentformatted}{\abscontent}}{}
+
+\Firstpage
+
+\section*{Introduction and related work}
+
+Pitch calling is one of baseball's clearest repeated decision problems. A pitcher does not choose from the entire vocabulary of baseball pitches. He chooses from his own repertoire, against a particular batter, in a particular count, after a sequence of prior pitches, with a game state that changes after almost every event. The same four-seam fastball can mean different things at 0--0, 0--2, and 3--2; a slider may be a chase pitch after a fastball but a liability after the hitter has already seen it twice. The empirical question is therefore not whether pitch selection is perfectly predictable. It is whether observed pitch choices contain enough regularity to be modeled as a state-dependent probability distribution.
+
+This project builds that model in a sequence of increasingly flexible specifications. The first specification is a state machine: for each pitcher and context, estimate the empirical probability of each pitch type, then use smoothing and fallback states when a context is sparse. The second specification uses ordinary least squares (OLS) linear probability models to summarize how count, prior pitch, batter side, and pitcher fixed effects shift the probability of specific pitch types. The third specification uses boosted decision-tree models, including histogram gradient boosting and XGBoost, to learn nonlinear interactions among pitcher identity, batter identity, pitch history, and game context. The final specification stacks the boosted models with the state-machine probabilities so that the final prediction can use both parametric learning and explicit sequence frequencies.
+
+The project is also designed around interpretability. A highly accurate black-box classifier would be less useful if it only said that a pitcher's name was predictive. Pitcher identity is predictive because it stands in for arsenal, role, team strategy, handedness, and physical pitch qualities. For that reason, the interpretability analysis groups one-hot features into baseball concepts before reading SHAP values. The goal is to distinguish a meaningful statement, such as ``pitcher arsenal and previous pitch type dominate the model,'' from a misleading one, such as ``one pitcher name causes fastballs.'' This distinction is important because the data are observational. The model predicts what was thrown, not what should have been thrown.
+
+\Endparasplit
+
+\section*{Data}
+
+The analysis uses public Statcast pitch-level data collected through Baseball Savant \cite{baseballsavant}. The training sample contains the top 100 pitchers by 2025 pitch volume and covers games from March 18 through September 28, 2025. The processed sequence table contains 261,620 pitch rows after removing rows without a pitch type and constructing lagged context. The temporal validation sample uses 2026 pitches thrown by the same 2025 pitcher pool from March 25 through June 4, 2026. Ninety-two of the 100 pitchers had usable 2026 observations during this window, producing 82,282 validation rows after alignment to the 2025 pitch-type vocabulary.
+
+Each row represents the information available before an observed pitch is thrown. The target variable is the pitch type actually thrown. The core categorical predictors are pitcher name, batter name, batter side, pitcher throwing hand, count, base-out state, previous pitch type, pitch type two pitches ago, previous pitch result, and inning half. Numeric predictors include balls, strikes, outs, inning, pitch number, previous zone, previous release speed, previous plate location, score differential from the batting team's perspective, and lineup handedness shares. Additional engineered features summarize current-game pitch mix, pitcher-batter matchup history, batter history, pitcher history, and recent-start pitch mix over the previous three appearances.
+
+The 2026 data are never used during model fitting. The main in-season comparison uses a stratified 80/20 split within 2025, and the out-of-season comparison evaluates the same workflow on the 2026 temporal validation set. Within the 80\% 2025 development split, a second split is used to train the stacking model: base models are trained on one portion, their probabilities are scored on a calibration portion, and a multinomial logistic regression stacker learns how to combine histogram gradient boosting, XGBoost, and state-machine probabilities. Final base models are then refit on the full development split before scoring the 2025 holdout and 2026 validation set.
+
+\section*{Methods}
+
+\subsection*{State-machine model}
+
+The state-machine model estimates a conditional distribution over pitch types. The primary state is pitcher, count, previous pitch type, and batter side. For a state $s$ and pitch type $p$, the smoothed estimate is
+\begin{equation}
+\Pr(p \mid s)=\frac{n_{s,p}+\alpha}{n_s+\alpha K},
+\end{equation}
+where $n_{s,p}$ is the number of training pitches of type $p$ observed in state $s$, $n_s$ is the number of pitches in that state, $K$ is the number of pitch classes, and $\alpha=1$ is Laplace smoothing. If a state has fewer than five training observations, the model backs off to less specific states, ending at the pitcher's overall pitch distribution. This is a finite-state approximation to a Markov process in which the next pitch depends on a compact representation of the recent state rather than the entire game history \cite{norris1998markov}.
+
+\subsection*{OLS beta analysis}
+
+OLS is used as a descriptive model, not as the strongest predictor. For major pitch outcomes, the dependent variable is an indicator that the observed pitch is a given pitch type. Predictors include count, previous pitch type, batter side, previous pitch result, and pitcher fixed effects. The resulting beta coefficients create two useful summaries. First, pitcher-by-pitch intercept surfaces show which pitchers are structurally more likely to throw each pitch type after accounting for context. Second, context beta surfaces show how counts and prior pitches shift pitch probabilities. This step connects the model to classical regression and makes the later boosted results easier to interpret \cite{wooldridge2010econometric}.
+
+\subsection*{Boosted and stacked models}
+
+The boosted models use histogram gradient boosting and XGBoost. Gradient boosting fits an additive sequence of decision trees, where later trees correct errors from earlier trees \cite{friedman2001greedy}. XGBoost uses a regularized tree-boosting objective with shrinkage, subsampling, and efficient tree construction \cite{chen2016xgboost}. In this project, XGBoost is configured with 220 estimators, maximum tree depth 4, learning rate 0.06, subsampling 0.90, column subsampling 0.90, L2 regularization 2.0, and L1 regularization 0.05. Histogram gradient boosting uses learning rate 0.08, 160 iterations, 31 maximum leaf nodes, and L2 regularization 0.05.
+
+Both boosted models are trained with recency weights. If a pitch is $d$ days older than the most recent training pitch, its weight is proportional to $0.5^{d/45}$ and then normalized to mean one. This makes recent behavior more influential without discarding older observations. The stacked model then concatenates the class-probability vectors from histogram gradient boosting, XGBoost, and the state machine, and fits a multinomial logistic regression meta-model with $C=0.75$. All models are evaluated using exact accuracy, top-two accuracy, top-three accuracy, macro F1, average probability assigned to the actual pitch, model confidence, and log loss.
+
+\subsection*{SHAP interpretation}
+
+SHAP values are used to interpret feature importance in the boosted workflow \cite{lundberg2017unified}. Because one-hot encoded player names can dominate raw feature rankings, features are also grouped into baseball concepts: pitcher identity and arsenal, previous pitch type, two-pitches-ago pitch type, count leverage, batter handedness, previous release speed, previous pitch result, base-out state, pitch number, and score differential. This grouped interpretation is more faithful to the baseball question because it reads player identity as a proxy for repertoire and role rather than as a standalone causal variable.
+
+\section*{Results}
+
+\subsection*{Model comparison}
+
+The first result is that a simple state machine is already a strong predictor. On the 2025 holdout, a dummy baseline that predicts the most common eligible pitch reaches 31.9\% exact accuracy. The smoothed state machine raises exact accuracy to 42.3\% and top-three accuracy to 84.2\%. This improvement is large because count, previous pitch, batter side, and pitcher identity sharply reduce the plausible pitch set. The boosted models add further accuracy, and the stacked model performs best on exact accuracy in both evaluation periods. It reaches 44.1\% exact accuracy and 86.2\% top-three accuracy on the 2025 holdout, then 40.4\% exact accuracy and 82.1\% top-three accuracy on 2026 validation.
+
+\begin{figure}[tbhp]
+\centering
+\includegraphics[width=.97\linewidth]{figures/01_model_comparison_exact_top3.png}
+\caption{Predictive comparison across state-machine, boosted, XGBoost, and stacked specifications. Exact accuracy measures whether the top predicted pitch matches the pitch actually thrown. Top-three accuracy is included because pitch selection is a mixed-strategy problem: a model can be useful if it places the actual pitch inside a small plausible set. The stacked model has the strongest exact accuracy on both the 2025 holdout and the 2026 temporal validation set.}
+\label{fig:modelcomparison}
+\end{figure}
+
+\begin{table}[tbhp]
+\centering
+\caption{Selected model performance on held-out 2025 data and 2026 temporal validation}
+\begin{tabular}{lccccc}
+Model & Dataset & Rows & Exact & Top 2 & Top 3 \\
+\midrule
+Dummy baseline & 2025 holdout & 52,324 & 0.319 & -- & -- \\
+State machine & 2025 holdout & 52,324 & 0.423 & 0.682 & 0.842 \\
+Current-game HGB & 2025 holdout & 52,324 & 0.436 & 0.703 & 0.864 \\
+XGBoost & 2025 holdout & 52,324 & 0.431 & 0.699 & 0.860 \\
+Stacked model & 2025 holdout & 52,324 & 0.441 & 0.707 & 0.862 \\
+State machine & 2026 to date & 82,282 & 0.374 & 0.622 & 0.784 \\
+Current-game HGB & 2026 to date & 82,282 & 0.397 & 0.663 & 0.829 \\
+XGBoost & 2026 to date & 82,282 & 0.400 & 0.666 & 0.831 \\
+Stacked model & 2026 to date & 82,282 & 0.404 & 0.664 & 0.821 \\
+\bottomrule
+\end{tabular}
+\addtabletext{HGB denotes histogram gradient boosting. The stacked model combines HGB, XGBoost, and state-machine class probabilities. Values are rounded to three decimals.}
+\label{tab:models}
+\end{table}
+
+\subsection*{State context reduces uncertainty}
+
+The state-machine results clarify why exact prediction remains difficult. Pitchers do not usually have one deterministic next pitch. However, adding context raises the share of the modal pitch and lowers entropy. At the pitcher-only level, the weighted modal pitch share is 38.2\% and weighted entropy is 2.11 bits. Adding count and previous pitch raises the weighted modal share to 44.5\% and lowers entropy to 1.88 bits. Adding batter side increases the modal share to 47.4\% and lowers entropy to 1.73 bits. The tradeoff is sparsity: the median number of pitches per state falls from more than 2,000 in pitcher-only states to 10 in pitcher-count-previous-pitch-batter-side states. The smoothing and fallback design is therefore necessary rather than cosmetic.
+
+\begin{figure}[tbhp]
+\centering
+\includegraphics[width=.92\linewidth]{figures/04_state_context_entropy_mode_share.png}
+\caption{Context makes pitch selection more concentrated but also more sparse. The state machine becomes more certain as it moves from pitcher-only states to pitcher-count-previous-pitch-batter-side states, but the number of observations per state declines. This motivates the use of smoothing and fallback states.}
+\label{fig:entropy}
+\end{figure}
+
+\subsection*{Regression surfaces show pitcher and context structure}
+
+The OLS beta analysis provides a compact description of repertoire and context effects. Pitcher fixed effects differ sharply across pitch types, which is expected because pitchers are constrained by their arsenals. More informative for sequence interpretation are the context coefficients: previous fastballs, sinkers, sliders, and changeups shift the next-pitch probabilities in different directions; count effects are especially visible in two-strike and three-ball counts; and batter handedness shifts pitch mix without fully determining it. These regressions are not presented as causal estimates. They are descriptive summaries of how observed pitch choices move across interpretable baseball conditions.
+
+\begin{figure}[tbhp]
+\centering
+\begin{minipage}{.49\linewidth}
+\centering
+\includegraphics[width=\linewidth]{figures/08_ols_pitcher_pitch_beta_heatmap.png}
+\end{minipage}
+\hfill
+\begin{minipage}{.49\linewidth}
+\centering
+\includegraphics[width=\linewidth]{figures/09_ols_context_beta_heatmap.png}
+\end{minipage}
+\caption{OLS linear probability summaries. Left, pitcher-by-pitch beta coefficients show repertoire structure after accounting for observed context. Right, context beta coefficients show how count, previous pitch, and batter side shift pitch probabilities. The regression results are descriptive and are used to interpret strategic regularities rather than to claim causal pitch effects.}
+\label{fig:ols}
+\end{figure}
+
+\subsection*{Grouped SHAP explains the boosted model}
+
+Raw SHAP rankings can be misleading when player-name indicators are included. In an early interpretation, the model appeared to care heavily about four-seam fastballs and one individual pitcher. Grouping the one-hot variables gives a better reading. The largest global feature group is pitcher identity and arsenal, followed by previous pitch type, count leverage, two-pitches-ago pitch type, batter handedness, previous release speed, and previous pitch result. This pattern is consistent with the state-machine results: the model is strongest when it knows who is pitching, what that pitcher can throw, what has just been thrown, and what count pressure the pitcher faces.
+
+\begin{figure}[tbhp]
+\centering
+\begin{minipage}{.49\linewidth}
+\centering
+\includegraphics[width=\linewidth]{figures/11_shap_grouped_global_importance.png}
+\end{minipage}
+\hfill
+\begin{minipage}{.49\linewidth}
+\centering
+\includegraphics[width=\linewidth]{figures/12_shap_pitch_specific_panels.png}
+\end{minipage}
+\caption{SHAP interpretation of boosted pitch-type models. Left, one-hot features are grouped into baseball concepts to avoid over-reading individual player indicators. Right, pitch-specific panels show that the importance of recent pitch history, count, handedness, and repertoire differs by target pitch type.}
+\label{fig:shap}
+\end{figure}
+
+\subsection*{Pitch transitions reveal sequence habits}
+
+The empirical transition matrix reinforces the same conclusion from a different angle. Some transitions are common because they reflect general baseball strategy, such as alternating hard and soft pitches or returning to a primary fastball. Others are common because of selection into pitcher-specific arsenals. A transition matrix alone cannot identify intent, deception, or game theory. It can, however, show which pitch-pair probabilities are large enough to become useful ingredients in a predictive state model.
+
+\begin{figure}[tbhp]
+\centering
+\includegraphics[width=.86\linewidth]{figures/14_pitch_transition_matrix.png}
+\caption{Empirical pitch transition matrix for the 2025 training sample. Rows represent the previous pitch type and columns represent the observed next pitch type. The matrix summarizes aggregate sequencing tendencies, while the predictive state machine conditions these transitions further by pitcher, count, and batter side.}
+\label{fig:transitions}
+\end{figure}
+
+\section*{Discussion}
+
+The main finding is that pitch selection is predictable enough to model, but not predictable enough to treat as deterministic. The best model correctly identifies the exact pitch 44.1\% of the time on the 2025 holdout and 40.4\% of the time on 2026 validation. Those values are far above a simple baseline, but they also leave substantial irreducible uncertainty. This is appropriate for the baseball setting. Pitchers are trying not to be predictable, batters adapt, catchers and coaches influence pitch calls, and the available public data do not fully observe scouting reports, pitcher fatigue, injury status, catcher signs, or strategic deception.
+
+The comparison between models is also informative. The state machine is less flexible than the boosted models but remains highly competitive because it uses the right baseball state. Boosted models improve accuracy by using richer interactions and continuous context, especially current-game pitch mix, matchup history, batter history, and recent-start behavior. The stacked model adds a small but defensible gain by letting a meta-model decide when the state machine or boosted classifiers are more trustworthy. The temporal validation drop from 2025 to 2026 is expected: pitch mixes change, pitcher roles change, batters adjust, and the 2026 sample ends on June 4 rather than covering a full season.
+
+The project has limitations. First, the sample is restricted to high-volume pitchers, so it describes established pitchers more than call-ups, relievers with small samples, or pitchers returning from injury. Second, pitch-type labels are treated as the outcome, but pitch design also includes velocity, movement, location, and tunneling. Third, the model predicts observed pitch choice rather than pitch effectiveness. A stronger future version would jointly model pitch type and intended location, add catcher and umpire context, use rolling injury or velocity-change indicators, and compare CatBoost to the current HGB and XGBoost stack because CatBoost is designed to handle categorical variables directly \cite{prokhorenkova2018catboost}. Fourth, selection bias remains important: the model only observes pitches that were actually thrown in situations that actually occurred.
+
+Despite those limitations, the results are strong enough for a final paper because they connect multiple course topics through one empirical question. Linear algebra and NumPy appear in the feature matrices and probability vectors. Regression appears in the OLS beta analysis. Gradient descent and boosting appear in the boosted classifiers. Decision trees, XGBoost, and SHAP appear in the main predictive and interpretability workflow. The state machine gives the project a transparent domain-specific core, while the stacked model tests whether modern machine learning improves on that core in a measurable way.
+
+\section*{Agentic analysis}
+
+An AI coding assistant was used as a collaborative tool during the project. The assistant helped transform an initial pitch-sequencing idea into a reproducible workflow with numbered notebooks, scripts, outputs, diagnostics, and paper figures. The most useful contributions were mechanical and organizational: expanding the data from 20 to 100 pitchers, enforcing no hardcoded paths, building Colab-ready notebooks, creating diagnostics before and after merges, implementing recency-weighted HGB and XGBoost models, adding a separate stacked-model experiment, and generating a final visualization pack for the paper narrative.
+
+The assistant was less reliable when interpretation required domain judgment. For example, the first SHAP reading made the model look ``stupid'' because individual one-hot features such as a previous four-seam fastball or one pitcher name appeared highly important. That output was technically valid but scientifically thin. I rejected that interpretation and asked for a stronger explanation. The final analysis grouped SHAP features into concepts such as arsenal, previous pitch type, count leverage, and batter handedness, which produced a more defensible interpretation. I also chose to stop the model-building phase after XGBoost and the stacked experiment, leaving CatBoost and additional visualization work as future extensions rather than chasing every possible model.
+
+This experience changed the workflow in two ways. First, the assistant made it easier to run larger experiments quickly, but the project still required human choices about which comparisons were meaningful and which outputs should be trusted. Second, the assistant exposed how easy it is to confuse predictive signal with explanation. A model can use pitcher name because pitcher name summarizes arsenal, role, and team strategy; that does not mean the name itself explains a pitch. The final paper therefore treats AI assistance as a useful accelerator but not as an authority. The accepted outputs are those that survived consistency checks, temporal validation, and baseball interpretation.
+
+\dataavail{All code, processed outputs, notebooks, and visualizations are intended for release in a public GitHub repository. The repository will contain numbered notebooks, a code directory, a data directory or cloud-data link, and an output directory. Raw pitch-level data are publicly available from Baseball Savant. Processed tables and scripts used to reproduce the analyses will be included with the final course repository when public release is complete.}
+
+\acknow{The author thanks the course instructor for feedback that sharpened the modeling design, especially the recommendation to compare pitcher-specific loops, pooled boosted models, state-machine probabilities, and regression beta analysis.}
+
+\showacknow
+
+\begin{thebibliography}{9}
+
+\bibitem{baseballsavant}
+Major League Baseball, Baseball Savant Statcast search. Available at https://baseballsavant.mlb.com/statcast\_search. Accessed 7 June 2026.
+
+\bibitem{norris1998markov}
+J. R. Norris, \textit{Markov Chains} (Cambridge University Press, Cambridge, UK, 1998).
+
+\bibitem{wooldridge2010econometric}
+J. M. Wooldridge, \textit{Econometric Analysis of Cross Section and Panel Data} (MIT Press, Cambridge, MA, ed. 2, 2010).
+
+\bibitem{friedman2001greedy}
+J. H. Friedman, Greedy function approximation: A gradient boosting machine. \textit{Ann. Stat.} \textbf{29}, 1189--1232 (2001).
+
+\bibitem{chen2016xgboost}
+T. Chen, C. Guestrin, XGBoost: A scalable tree boosting system. In \textit{Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining} (Association for Computing Machinery, New York, NY, 2016), pp. 785--794.
+
+\bibitem{lundberg2017unified}
+S. M. Lundberg, S.-I. Lee, A unified approach to interpreting model predictions. In \textit{Advances in Neural Information Processing Systems} \textbf{30} (2017), pp. 4765--4774.
+
+\bibitem{prokhorenkova2018catboost}
+L. Prokhorenkova, G. Gusev, A. Vorobev, A. V. Dorogush, A. Gulin, CatBoost: Unbiased boosting with categorical features. In \textit{Advances in Neural Information Processing Systems} \textbf{31} (2018), pp. 6638--6648.
+
+\end{thebibliography}
+
+\end{document}

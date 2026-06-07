@@ -1,0 +1,64 @@
+[
+  {
+    "dataset": "2025_holdout",
+    "task": "next_pitch_dummy",
+    "rows": 52324,
+    "accuracy": 0.3192034248146166
+  },
+  {
+    "dataset": "2025_holdout",
+    "task": "next_pitch",
+    "rows": 52324,
+    "accuracy": 0.43377799862395844,
+    "top2_accuracy": 0.6995833651861478,
+    "top3_accuracy": 0.8562036541548811,
+    "macro_f1": 0.28086712329046143,
+    "mean_probability_assigned_to_actual_pitch": 0.30772218801818985,
+    "mean_model_confidence": 0.42311686780996355
+  },
+  {
+    "dataset": "2025_holdout",
+    "task": "whiff_or_weak",
+    "rows": 52324,
+    "accuracy": 0.7768519226358841,
+    "auc": 0.7246993336578901,
+    "brier": 0.15519234124056147,
+    "positive_rate": 0.2231671890528247
+  },
+  {
+    "dataset": "2025_holdout",
+    "task": "pitcher_run_value",
+    "rows": 52324,
+    "rmse": 0.2230813158829748,
+    "r2": 0.029232000605572406,
+    "target_mean": 0.0012248490176592004
+  },
+  {
+    "dataset": "2026_to_date",
+    "task": "next_pitch",
+    "rows": 82282,
+    "accuracy": 0.39052283610024063,
+    "top2_accuracy": 0.6433120245011059,
+    "top3_accuracy": 0.8011715806616271,
+    "macro_f1": 0.22613382139421503,
+    "mean_probability_assigned_to_actual_pitch": 0.28446476527480946,
+    "mean_model_confidence": 0.41778860465160866
+  },
+  {
+    "dataset": "2026_to_date",
+    "task": "whiff_or_weak",
+    "rows": 82282,
+    "accuracy": 0.7782990204418949,
+    "auc": 0.7199510469153071,
+    "brier": 0.15557076350509488,
+    "positive_rate": 0.22243017914003063
+  },
+  {
+    "dataset": "2026_to_date",
+    "task": "pitcher_run_value",
+    "rows": 82275,
+    "rmse": 0.22261311343720813,
+    "r2": 0.027613734685311253,
+    "target_mean": -0.00029255545426922045
+  }
+]

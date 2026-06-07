@@ -1,0 +1,11 @@
+feature_group,mean_abs_shap,pitch_types
+Pitcher identity / arsenal,0.07236798528061668,4
+Previous pitch type,0.061329605079732265,4
+Count / ball-strike leverage,0.03132996902406551,4
+Two-pitches-ago pitch type,0.030259942124866317,4
+Batter handedness,0.018348001287557723,4
+prev release speed,0.012633648690646725,4
+Previous pitch result,0.010994905965917842,4
+Base/out state,0.0054061281315092025,4
+pitch number,0.00440038207775765,4
+score diff batting team,0.002282924983104775,4
